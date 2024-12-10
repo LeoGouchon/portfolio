@@ -1,46 +1,53 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import {StrictMode} from 'react'
+import {createRoot} from 'react-dom/client'
 import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Record} from "./components/Record.tsx";
-import {RecordList} from "./components/RecordList.tsx";
+import {GlobalWrapper} from "./global.style.tsx";
+import {DriverList} from "./components/DriverList.tsx";
+import {CreateEntity} from "./components/CreateEntity.tsx";
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <App/>,
         children: [
             {
                 path: "/",
-                element: <RecordList />
-            }
-        ]
-    },
-    {
-        path: "/edit/:id",
-        element: <App />,
-        children: [
-            {
-                path: "/edit/:id",
-                element: <Record />
+                element: <DriverList/>
             }
         ]
     },
     {
         path: "/create",
-        element: <App />,
+        element: <App/>,
         children: [
             {
                 path: "/create",
-                element: <Record />
+                element: <CreateEntity/>
+            }
+        ]
+    },
+    {
+        path: "/driver",
+        element: <App/>,
+        children: [
+            {
+                path: "/driver",
+                element: <DriverList/>
             }
         ]
     }
 ])
 
+const queryClient = new QueryClient();
+
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+    <QueryClientProvider client={queryClient}>
+        <GlobalWrapper>
+            <StrictMode>
+                <RouterProvider router={router}/>
+            </StrictMode>
+        </GlobalWrapper>
+    </QueryClientProvider>
 )
