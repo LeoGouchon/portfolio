@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import {Card, CardActions, Tab, Tabs} from "@mui/material";
+import {Card, CardActions, css, Tab, Tabs} from "@mui/material";
 
 export const DriverInformation = styled(Card)`
     width: 100%;
@@ -7,7 +7,7 @@ export const DriverInformation = styled(Card)`
 
 export const DriverCardVisualWrapper = styled.div`
     aspect-ratio: 744 / 1039;
-    background-color: red;
+    background-color: cadetblue;
     
     display: flex;
     align-items: center;   
@@ -27,12 +27,16 @@ export const DriverWrapper = styled.div`
     max-width: 300px;
 `;
 
-export const DriverCardVisual = styled.div<{ img: string }>`
+export const DriverCardVisual = styled.div<{ img: string, isUnknow: boolean }>`
     background-image: url(${props => props.img});
     background-size: cover;
     aspect-ratio: 744 / 1039;
     width: 100%;
     height: 100%;
+    
+    ${props => props.isUnknow && css`
+        filter: blur(2px);
+    `} 
 `;
 
 export const CardActionsWrapper = styled(CardActions)`
@@ -48,5 +52,5 @@ export const CardTabs = styled(Tabs)`
 export const TabStyled = styled(Tab)`$
     display: flex;
     width: 20%;
-    min-width: 0px;
+    min-width: 0;
 `;

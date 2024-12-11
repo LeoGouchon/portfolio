@@ -13,6 +13,7 @@ interface seasonEntity {
     car_number: string;
     car_category: string;
     team_name: string;
+    has_card: boolean;
 }
 
 export const CardList = () => {
@@ -30,8 +31,8 @@ export const CardList = () => {
             <Divider/>
             <CardWrapper>
                 {isSeasonLoading ? <Skeleton variant={"rectangular"}/>
-                    : seasonData.sort((a: seasonEntity, b: seasonEntity) => parseInt(a.car_number) - parseInt(b.car_number)).map((_: seasonEntity) =>
-                        <Card data={_}/>
+                    : seasonData.sort((a: seasonEntity, b: seasonEntity) => ((b.has_card ? 1 : 0) - (a.has_card ? 1 : 0)  || parseInt(a.car_number) - parseInt(b.car_number))).map((_: seasonEntity) =>
+                        <Card key={_.driver_id} data={_} />
                     )
                 }
             </CardWrapper>

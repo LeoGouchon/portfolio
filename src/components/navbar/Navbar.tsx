@@ -24,7 +24,7 @@ export const Navbar = () => {
                             </NavLink>
                         </Button>
                         <Button color="inherit">
-                            <NavLink to="/driver">
+                            <NavLink to="/list">
                                 List
                             </NavLink>
                         </Button>

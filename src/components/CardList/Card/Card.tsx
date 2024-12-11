@@ -1,4 +1,4 @@
-import {Avatar, CardActions, CardHeader, IconButton, Tab, Tabs} from "@mui/material";
+import {Avatar, CardHeader, Skeleton} from "@mui/material";
 import {
     CardActionsWrapper,
     CardTabs,
@@ -8,7 +8,8 @@ import {
     DriverWrapper, TabStyled
 } from "./Card.style.tsx";
 import {Looks3, Looks4, Looks5, LooksOne, LooksTwo} from "@mui/icons-material";
-import React, {useState} from "react";
+import {useEffect, useState} from "react";
+import {useQuery} from "@tanstack/react-query";
 
 interface dataInterface {
     driver_id: string;
@@ -18,23 +19,46 @@ interface dataInterface {
     car_number: string;
     car_category: string;
     team_name: string;
+    has_card: boolean;
+}
+
+interface cardInterface {
+    card_id: string;
+    card_rarity: number;
+    card_url: string
 }
 
 export const Card = ({data}: { data: dataInterface }) => {
-    const [tabValue, setTabValue] = useState(0)
+
+    const {data: cardsData, isLoading: isCardsLoading} = useQuery<cardInterface[]>({
+        queryKey: ["card", "driver_id", data.driver_id],
+        queryFn: async () => {
+            const response = await fetch(`http://localhost:5050/card/driver/${data.driver_id}`);
+            return response.json();
+        }
+    })
+
+    const [tabValue, setTabValue] = useState(4)
 
     const handleTabChange = (_event: React.SyntheticEvent, newValue: number) => {
         setTabValue(newValue)
     }
 
+    useEffect(() => {
+        console.log(cardsData)
+    }, [tabValue])
+
     return (
         <DriverWrapper>
-            {data.driver_last_name === "Sato" ?
-                <DriverCardVisualWrapper>
-                    <DriverCardVisual img={"src/assets/Card/MarinoSato05.png"}/>
+            {data.has_card ?
+                isCardsLoading ? <Skeleton variant={"rectangular"}/>
+                    :<DriverCardVisualWrapper>
+                    <DriverCardVisual img={
+                        cardsData?.find(card => card.card_rarity === tabValue + 1)?.card_url ?? "https://i.ibb.co/xCdSGnm/unknow.png"
+                    } isUnknow={false}/>
                 </DriverCardVisualWrapper>
                 : <DriverCardVisualWrapper>
-                    <DriverCardVisual img={""}/>
+                    <DriverCardVisual img={"https://i.ibb.co/PxB1F7z/unknow.png"} isUnknow={true}/>
                 </DriverCardVisualWrapper>
             }
             <DriverInformation>
@@ -47,11 +71,11 @@ export const Card = ({data}: { data: dataInterface }) => {
                 />
                 <CardActionsWrapper>
                     <CardTabs value={tabValue} onChange={handleTabChange}>
-                        <TabStyled icon={<LooksOne/>}/>
-                        <TabStyled icon={<LooksTwo/>}/>
-                        <TabStyled icon={<Looks3/>}/>
-                        <TabStyled icon={<Looks4/>}/>
-                        <TabStyled icon={<Looks5/>}/>
+                        <TabStyled icon={<LooksOne/>} disabled={!cardsData?.find(card => card.card_rarity === 1)}/>
+                        <TabStyled icon={<LooksTwo/>} disabled={!cardsData?.find(card => card.card_rarity === 2)}/>
+                        <TabStyled icon={<Looks3/>} disabled={!cardsData?.find(card => card.card_rarity === 3)}/>
+                        <TabStyled icon={<Looks4/>} disabled={!cardsData?.find(card => card.card_rarity === 4)}/>
+                        <TabStyled icon={<Looks5/>} disabled={!cardsData?.find(card => card.card_rarity === 5)}/>
                     </CardTabs>
                 </CardActionsWrapper>
             </DriverInformation>
