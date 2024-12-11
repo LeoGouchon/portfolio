@@ -5,7 +5,7 @@ import {useQuery} from "@tanstack/react-query";
 
 interface formInterface {
     car_category: string,
-    car_number: number,
+    car_number: string,
     car_year: number,
     car_championship: string,
     car_model: string,
@@ -20,7 +20,7 @@ interface teamInterface {
 export const Car = () => {
     const [form, setForm] = useState<formInterface>({
         car_category: "",
-        car_number: 0,
+        car_number: "",
         car_year: 2024,
         car_championship: "",
         car_model: "",
@@ -107,7 +107,7 @@ export const Car = () => {
         } finally {
             setForm({
                 car_category: "",
-                car_number: 0,
+                car_number: "",
                 car_year: 2024,
                 car_championship: "",
                 car_model: "",

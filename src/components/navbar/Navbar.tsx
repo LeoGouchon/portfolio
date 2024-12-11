@@ -23,9 +23,16 @@ export const Navbar = () => {
                                 Create
                             </NavLink>
                         </Button>
-                        <Button color="inherit"><NavLink to="/driver">
-                            List
-                        </NavLink></Button>
+                        <Button color="inherit">
+                            <NavLink to="/driver">
+                                List
+                            </NavLink>
+                        </Button>
+                        <Button color="inherit">
+                            <NavLink to="/card">
+                                Cards
+                            </NavLink>
+                        </Button>
                     </nav>
                 </Toolbar>
             </AppBar>

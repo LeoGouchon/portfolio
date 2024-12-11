@@ -3,7 +3,8 @@ import {createRoot} from 'react-dom/client'
 import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {GlobalWrapper} from "./global.style.tsx";
-import {DriverList} from "./components/DriverList.tsx";
+import {DataList} from "./components/DataList.tsx";
+import {CardList} from "./components/CardList/CardList.tsx";
 import {CreateEntity} from "./components/CreateEntity.tsx";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <DriverList/>
+                element: <DataList/>
             }
         ]
     },
@@ -29,12 +30,22 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: "/driver",
+        path: "/list",
         element: <App/>,
         children: [
             {
-                path: "/driver",
-                element: <DriverList/>
+                path: "/list",
+                element: <DataList/>
+            }
+        ]
+    },
+    {
+        path: "/card",
+        element: <App/>,
+        children: [
+            {
+                path: "/card",
+                element: <CardList/>
             }
         ]
     }

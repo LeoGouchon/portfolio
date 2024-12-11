@@ -22,7 +22,7 @@ interface carInterface {
     car_fk_team_id: string,
 }
 
-export const DriverList = () => {
+export const DataList = () => {
     const {data: driverData, isLoading: isDriverLoading, error: driverError} = useQuery({
         queryKey: ["drivers"],
         queryFn: async () => {
