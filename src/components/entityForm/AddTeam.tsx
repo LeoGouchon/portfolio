@@ -6,7 +6,7 @@ interface formInterface {
     team_name: string,
 }
 
-export const Team = () => {
+export const AddTeam = () => {
     const [form, setForm] = useState<formInterface>({
         team_name: "",
     });

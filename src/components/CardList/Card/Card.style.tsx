@@ -7,7 +7,6 @@ export const DriverInformation = styled(Card)`
 
 export const DriverCardVisualWrapper = styled.div`
     aspect-ratio: 744 / 1039;
-    background-color: cadetblue;
     
     display: flex;
     align-items: center;   
@@ -22,9 +21,12 @@ export const DriverWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
+    margin-left: 1px;
+    margin-bottom: 1px;
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    padding: 16px 24px;
 `;
 
 export const DriverCardVisual = styled.div<{ img: string, isUnknow: boolean }>`
@@ -49,7 +51,7 @@ export const CardTabs = styled(Tabs)`
     width: 100%;
 `;
 
-export const TabStyled = styled(Tab)`$
+export const TabStyled = styled(Tab)`
     display: flex;
     width: 20%;
     min-width: 0;

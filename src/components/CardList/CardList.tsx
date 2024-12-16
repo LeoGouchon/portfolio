@@ -1,9 +1,10 @@
-import {Divider, Skeleton} from "@mui/material";
+import {FormControlLabel, Skeleton, Switch} from "@mui/material";
 import {
-    CardWrapper
+    CardWrapper, FilterOrderWrappper, GlobalWrapper
 } from "./CarList.style.tsx";
 import {useQuery} from "@tanstack/react-query";
 import {Card} from "./Card/Card.tsx";
+import {useState} from "react";
 
 interface seasonEntity {
     driver_id: string;
@@ -25,17 +26,26 @@ export const CardList = () => {
         }
     })
 
+    const [viewNoCard, setViewNoCard] = useState(true);
+
     return (
-        <>
-            STAT
-            <Divider/>
+        <GlobalWrapper>
+            <FilterOrderWrappper>
+                <FormControlLabel control={<Switch
+                    value="check"
+                    checked={viewNoCard}
+                    color={"primary"}
+
+                    onChange={() => setViewNoCard((prevSelected: boolean) => !prevSelected)}
+                />} label={"Display also no card driver"} />
+            </FilterOrderWrappper>
             <CardWrapper>
                 {isSeasonLoading ? <Skeleton variant={"rectangular"}/>
-                    : seasonData.sort((a: seasonEntity, b: seasonEntity) => ((b.has_card ? 1 : 0) - (a.has_card ? 1 : 0)  || parseInt(a.car_number) - parseInt(b.car_number))).map((_: seasonEntity) =>
+                    : seasonData.filter((a:seasonEntity) => viewNoCard || a.has_card).sort((a: seasonEntity, b: seasonEntity) => ((b.has_card ? 1 : 0) - (a.has_card ? 1 : 0)  || parseInt(a.car_number) - parseInt(b.car_number))).map((_: seasonEntity) =>
                         <Card key={_.driver_id} data={_} />
                     )
                 }
             </CardWrapper>
-        </>
+        </GlobalWrapper>
     )
 }

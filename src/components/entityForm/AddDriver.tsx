@@ -25,7 +25,7 @@ interface carInterface {
     car_fk_team_id: string,
 }
 
-export const Driver = () => {
+export const AddDriver = () => {
     const [form, setForm] = useState<formInterface>({
         driver_name: "",
         driver_last_name: "",

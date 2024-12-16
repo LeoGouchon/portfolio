@@ -38,7 +38,7 @@ export const Card = ({data}: { data: dataInterface }) => {
         }
     })
 
-    const [tabValue, setTabValue] = useState(4)
+    const [tabValue, setTabValue] = useState(data.has_card ? 4 : -1)
 
     const handleTabChange = (_event: React.SyntheticEvent, newValue: number) => {
         setTabValue(newValue)

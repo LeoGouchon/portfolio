@@ -1,11 +1,14 @@
 import {Outlet} from "react-router-dom";
 import {Navbar} from "./components/navbar/Navbar.tsx";
+import {ContentWrapper} from "./global.style.tsx";
 
 export const App = () => {
     return (
         <>
             <Navbar />
-            <Outlet />
+            <ContentWrapper>
+                <Outlet />
+            </ContentWrapper>
         </>
     );
 }

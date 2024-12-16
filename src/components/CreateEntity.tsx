@@ -1,8 +1,10 @@
 import {Tab, Tabs} from "@mui/material";
 import React, {useState} from "react";
-import {Driver} from "./entityForm/Driver.tsx";
-import {Team} from "./entityForm/Team.tsx";
-import {Car} from "./entityForm/Car.tsx";
+import {AddDriver} from "./entityForm/AddDriver.tsx";
+import {AddTeam} from "./entityForm/AddTeam.tsx";
+import {AddCar} from "./entityForm/AddCar.tsx";
+import {AddCard} from "./entityForm/AddCard.tsx";
+import {GlobalWrapper} from "./entityForm/AddEntity.style.tsx";
 
 export const CreateEntity = () => {
     const [tabValue, setTabValue] = useState(0)
@@ -20,12 +22,14 @@ export const CreateEntity = () => {
             <Tab label={"driver"} id={"driver"}/>
             <Tab label={"team"} id={"team"}/>
             <Tab label={"car"} id={"car"}/>
+            <Tab label={"card"} id={"card"}/>
         </Tabs>
-            <div>
-                {tabValue === 0 && (<Driver/>)}
-                {tabValue === 1 && (<Team/>)}
-                {tabValue === 2 && (<Car />)}
-            </div>
+            <GlobalWrapper>
+                {tabValue === 0 && (<AddDriver/>)}
+                {tabValue === 1 && (<AddTeam/>)}
+                {tabValue === 2 && (<AddCar />)}
+                {tabValue === 3 && (<AddCard />)}
+            </GlobalWrapper>
         </>
     )
 }

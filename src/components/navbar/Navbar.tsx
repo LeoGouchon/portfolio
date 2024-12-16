@@ -1,13 +1,13 @@
 import {NavLink} from "react-router-dom";
-import {GlobalWrapper} from "./Navbar.style.tsx";
-import {AppBar, Button, IconButton, Toolbar} from "@mui/material";
+import {AppBarStyled, GlobalWrapper, ToolBarStyled} from "./Navbar.style.tsx";
+import {Button, IconButton} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 
 export const Navbar = () => {
     return (
         <GlobalWrapper>
-            <AppBar position="static">
-                <Toolbar>
+            <AppBarStyled position="static">
+                <ToolBarStyled>
                     <IconButton
                         size="large"
                         edge="start"
@@ -34,8 +34,8 @@ export const Navbar = () => {
                             </NavLink>
                         </Button>
                     </nav>
-                </Toolbar>
-            </AppBar>
+                </ToolBarStyled>
+            </AppBarStyled>
         </GlobalWrapper>
     )
 }

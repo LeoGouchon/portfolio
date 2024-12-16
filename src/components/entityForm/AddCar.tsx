@@ -17,7 +17,7 @@ interface teamInterface {
     team_name: string,
 }
 
-export const Car = () => {
+export const AddCar = () => {
     const [form, setForm] = useState<formInterface>({
         car_category: "",
         car_number: "",
