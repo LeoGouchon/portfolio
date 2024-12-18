@@ -6,7 +6,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import {Button, InputLabel, Rating, TextField} from "@mui/material";
 import {RelationValue} from "./components/RelationValue.tsx";
 import {CardPreviewWrapper, RelationsWrapper, RelationWrapper} from "./AddEntity.style.tsx";
-import {DriverCardVisual} from "../CardList/Card/Card.style.tsx";
+import {DriverCardVisual} from "../CardList/card/Card.style.tsx";
 
 type cardRelationType = ["driver" | "team" | "car", string];
 

@@ -3,7 +3,7 @@ import {
     CardWrapper, FilterOrderWrappper, GlobalWrapper
 } from "./CarList.style.tsx";
 import {useQuery} from "@tanstack/react-query";
-import {Card} from "./Card/Card.tsx";
+import {Card} from "./card/Card.tsx";
 import {useState} from "react";
 
 interface seasonEntity {

@@ -8,7 +8,7 @@ import {
     DriverWrapper, TabStyled
 } from "./Card.style.tsx";
 import {Looks3, Looks4, Looks5, LooksOne, LooksTwo} from "@mui/icons-material";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {useQuery} from "@tanstack/react-query";
 
 interface dataInterface {
@@ -38,15 +38,11 @@ export const Card = ({data}: { data: dataInterface }) => {
         }
     })
 
-    const [tabValue, setTabValue] = useState(data.has_card ? 4 : -1)
+    const [tabValue, setTabValue] = useState(data.has_card ? 4 : 0)
 
     const handleTabChange = (_event: React.SyntheticEvent, newValue: number) => {
         setTabValue(newValue)
     }
-
-    useEffect(() => {
-        console.log(cardsData)
-    }, [tabValue])
 
     return (
         <DriverWrapper>
@@ -69,15 +65,16 @@ export const Card = ({data}: { data: dataInterface }) => {
                         <Avatar>{data.car_number}</Avatar>
                     }
                 />
-                <CardActionsWrapper>
-                    <CardTabs value={tabValue} onChange={handleTabChange}>
-                        <TabStyled icon={<LooksOne/>} disabled={!cardsData?.find(card => card.card_rarity === 1)}/>
-                        <TabStyled icon={<LooksTwo/>} disabled={!cardsData?.find(card => card.card_rarity === 2)}/>
-                        <TabStyled icon={<Looks3/>} disabled={!cardsData?.find(card => card.card_rarity === 3)}/>
-                        <TabStyled icon={<Looks4/>} disabled={!cardsData?.find(card => card.card_rarity === 4)}/>
-                        <TabStyled icon={<Looks5/>} disabled={!cardsData?.find(card => card.card_rarity === 5)}/>
-                    </CardTabs>
-                </CardActionsWrapper>
+                {data.has_card &&
+                    <CardActionsWrapper>
+                        <CardTabs value={tabValue} onChange={handleTabChange}>
+                            <TabStyled icon={<LooksOne/>} disabled={!cardsData?.find(card => card.card_rarity === 1)}/>
+                            <TabStyled icon={<LooksTwo/>} disabled={!cardsData?.find(card => card.card_rarity === 2)}/>
+                            <TabStyled icon={<Looks3/>} disabled={!cardsData?.find(card => card.card_rarity === 3)}/>
+                            <TabStyled icon={<Looks4/>} disabled={!cardsData?.find(card => card.card_rarity === 4)}/>
+                            <TabStyled icon={<Looks5/>} disabled={!cardsData?.find(card => card.card_rarity === 5)}/>
+                        </CardTabs>
+                    </CardActionsWrapper>}
             </DriverInformation>
         </DriverWrapper>
     )

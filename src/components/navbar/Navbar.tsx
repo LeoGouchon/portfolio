@@ -1,39 +1,41 @@
-import {NavLink} from "react-router-dom";
-import {AppBarStyled, GlobalWrapper, ToolBarStyled} from "./Navbar.style.tsx";
-import {Button, IconButton} from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+import {AppBarStyled, GlobalWrapper, NavLinkStyled, ToolBarStyled} from "./Navbar.style.tsx";
+import {Button} from "@mui/material";
+import {useAuth} from "../../utils/AuthProvider.tsx";
 
 export const Navbar = () => {
+    const { user, logout } = useAuth()
+
+    console.log(user)
+
     return (
         <GlobalWrapper>
             <AppBarStyled position="static">
                 <ToolBarStyled>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{mr: 2}}
-                    >
-                        <MenuIcon/>
-                    </IconButton>
                     <nav>
-                        <Button color="inherit">
-                            <NavLink to="/create">
+                        {user?.role === "admin" && <Button color="inherit">
+                            <NavLinkStyled to="/create">
                                 Create
-                            </NavLink>
-                        </Button>
+                            </NavLinkStyled>
+                        </Button>}
                         <Button color="inherit">
-                            <NavLink to="/list">
-                                List
-                            </NavLink>
-                        </Button>
-                        <Button color="inherit">
-                            <NavLink to="/card">
+                            <NavLinkStyled to="/card">
                                 Cards
-                            </NavLink>
+                            </NavLinkStyled>
                         </Button>
                     </nav>
+                    {
+                        user ?
+                            <Button color="inherit"
+                                onClick={logout}
+                            >
+                                Log out
+                            </Button> :
+                            <Button color="inherit">
+                                <NavLinkStyled to="/login">
+                                    Login
+                                </NavLinkStyled>
+                            </Button>
+                    }
                 </ToolBarStyled>
             </AppBarStyled>
         </GlobalWrapper>
