@@ -69,7 +69,7 @@ const theme = createTheme(themeOptions)
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
-            staleTime: 60 * 1000, // Set a default stale time
+            staleTime: 60 * 1000,
         },
     },
 });
