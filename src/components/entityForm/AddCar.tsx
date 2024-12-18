@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import {Button, InputLabel, NativeSelect, Skeleton, TextField} from "@mui/material";
 import {useQuery} from "@tanstack/react-query";
+import {useAuth} from "../../utils/AuthProvider.tsx";
 
 interface formInterface {
     car_category: string,
@@ -18,6 +19,8 @@ interface teamInterface {
 }
 
 export const AddCar = () => {
+    const {getToken} = useAuth();
+
     const [form, setForm] = useState<formInterface>({
         car_category: "",
         car_number: "",
@@ -85,23 +88,24 @@ export const AddCar = () => {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
-                        "Authorization": `Bearer`
+                        "Authorization": `Bearer ${getToken()}`
                     },
                     body: JSON.stringify(car),
                 });
             } else {
-                // if we are updating a record we will PATCH to /record/:id.
-                response = await fetch(`http://localhost:5050/car/${params.id}`, {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(car),
-                });
+                // // if we are updating a record we will PATCH to /record/:id.
+                // TODO: TO IMPLEMENT
+                // response = await fetch(`http://localhost:5050/car/${params.id}`, {
+                //     method: "PATCH",
+                //     headers: {
+                //         "Content-Type": "application/json",
+                //     },
+                //     body: JSON.stringify(car),
+                // });
             }
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+            if (!response?.ok) {
+                throw new Error(`HTTP error! status: ${response?.status}`);
             }
         } catch (error) {
             console.error('A problem occurred with your fetch operation: ', error);

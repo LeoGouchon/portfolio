@@ -12,6 +12,7 @@ type AuthContextType = {
     login: (token: string) => void;
     logout: () => void;
     isAdmin: boolean;
+    getToken: () => string | null;
 };
 
 const AuthContext = createContext<AuthContextType>({
@@ -19,6 +20,7 @@ const AuthContext = createContext<AuthContextType>({
     login: () => {},
     logout: () => {},
     isAdmin: false,
+    getToken: () => null,
 });
 
 export const AuthProvider = ({ children }:{children: any}) => {
@@ -62,12 +64,16 @@ export const AuthProvider = ({ children }:{children: any}) => {
         }
     }
 
+    const getToken = (): string | null => {
+        return localStorage.getItem('token');
+    }
+
     useEffect(() => {
         loadUserFromToken();
     }, []);
 
     return (
-        <AuthContext.Provider value={{ user, login, logout, isAdmin: isAdmin() }}>
+        <AuthContext.Provider value={{ user, login, logout, isAdmin: isAdmin(), getToken }}>
             {children}
         </AuthContext.Provider>
     );

@@ -1,12 +1,14 @@
 import {useEffect, useState} from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import {Button, InputLabel, TextField} from "@mui/material";
+import {useAuth} from "../../utils/AuthProvider.tsx";
 
 interface formInterface {
     team_name: string,
 }
 
 export const AddTeam = () => {
+    const { getToken } = useAuth();
     const [form, setForm] = useState<formInterface>({
         team_name: "",
     });
@@ -61,22 +63,24 @@ export const AddTeam = () => {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
+                        "Authorization": `Bearer ${getToken()}`
                     },
                     body: JSON.stringify(team),
                 });
             } else {
                 // if we are updating a record we will PATCH to /record/:id.
-                response = await fetch(`http://localhost:5050/team/${params.id}`, {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(team),
-                });
+                // TODO: TO IMPLEMENT
+                // response = await fetch(`http://localhost:5050/team/${params.id}`, {
+                //     method: "PATCH",
+                //     headers: {
+                //         "Content-Type": "application/json",
+                //     },
+                //     body: JSON.stringify(team),
+                // });
             }
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+            if (!response?.ok) {
+                throw new Error(`HTTP error! status: ${response?.status}`);
             }
         } catch (error) {
             console.error('A problem occurred with your fetch operation: ', error);

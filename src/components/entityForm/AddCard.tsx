@@ -7,6 +7,7 @@ import {Button, InputLabel, Rating, TextField} from "@mui/material";
 import {RelationValue} from "./components/RelationValue.tsx";
 import {CardPreviewWrapper, RelationsWrapper, RelationWrapper} from "./AddEntity.style.tsx";
 import {DriverCardVisual} from "../CardList/card/Card.style.tsx";
+import {useAuth} from "../../utils/AuthProvider.tsx";
 
 type cardRelationType = ["driver" | "team" | "car", string];
 
@@ -17,6 +18,8 @@ interface formInterface {
 }
 
 export const AddCard = () => {
+    const {getToken} = useAuth();
+
     const [form, setForm] = useState<formInterface>({
         cardRarity: 1,
         cardURL: "",
@@ -116,22 +119,24 @@ export const AddCard = () => {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
+                        "Authorization": `Bearer ${getToken()}`
                     },
                     body: JSON.stringify(card),
                 });
             } else {
                 // if we are updating a record we will PATCH to /record/:id.
-                response = await fetch(`http://localhost:5050/card/${params.id}`, {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(card),
-                });
+                // TODO : TO IMPLEMENT
+                // response = await fetch(`http://localhost:5050/card/${params.id}`, {
+                //     method: "PATCH",
+                //     headers: {
+                //         "Content-Type": "application/json",
+                //     },
+                //     body: JSON.stringify(card),
+                // });
             }
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+            if (!response?.ok) {
+                throw new Error(`HTTP error! status: ${response?.status}`);
             }
         } catch (error) {
             console.error('A problem occurred with your fetch operation: ', error);
