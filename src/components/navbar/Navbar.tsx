@@ -1,41 +1,61 @@
-import {AppBarStyled, GlobalWrapper, NavLinkStyled, ToolBarStyled} from "./Navbar.style.tsx";
-import {Button} from "@mui/material";
-import {useAuth} from "../../utils/AuthProvider.tsx";
+import {
+    AppBarStyled,
+    GlobalWrapper,
+    LeftSideMenuWrapper,
+    MiddleSideMenuWrapper,
+    NavLinkStyled, NavWrapper, RightSideMenuWrapper,
+    ToolBarStyled
+} from "./Navbar.style.tsx";
+import {useAuth} from "../../providers/AuthProvider.tsx";
 
 export const Navbar = () => {
-    const { user, logout } = useAuth()
-
-    console.log(user)
+    const {user, logout} = useAuth()
 
     return (
         <GlobalWrapper>
-            <AppBarStyled position="static">
+            <AppBarStyled>
                 <ToolBarStyled>
-                    <nav>
-                        {user?.role === "admin" && <Button color="inherit">
-                            <NavLinkStyled to="/create">
-                                Create
+                    <NavWrapper>
+                        <LeftSideMenuWrapper>
+                            <NavLinkStyled to="/">
+                                Home
                             </NavLinkStyled>
-                        </Button>}
-                        <Button color="inherit">
-                            <NavLinkStyled to="/card">
-                                Cards
-                            </NavLinkStyled>
-                        </Button>
-                    </nav>
-                    {
-                        user ?
-                            <Button color="inherit"
-                                onClick={logout}
-                            >
-                                Log out
-                            </Button> :
-                            <Button color="inherit">
-                                <NavLinkStyled to="/login">
-                                    Login
+                        </LeftSideMenuWrapper>
+                        <MiddleSideMenuWrapper>
+                            {user?.role === "admin" &&
+                                <NavLinkStyled to="/create">
+                                    create
                                 </NavLinkStyled>
-                            </Button>
-                    }
+                            }
+
+                            <NavLinkStyled to="/works">
+                                Works
+                            </NavLinkStyled>
+                            <NavLinkStyled to="/about">
+                                About
+                            </NavLinkStyled>
+
+                        </MiddleSideMenuWrapper>
+                        <RightSideMenuWrapper>
+
+                            <NavLinkStyled to="/card">
+                                Contact
+                            </NavLinkStyled>
+
+                            {
+                                user ?
+                                    <NavLinkStyled to="#"
+                                                   onClick={logout}
+                                    >
+                                        Log out
+                                    </NavLinkStyled> :
+                                    <NavLinkStyled to="/login">
+                                        Login
+                                    </NavLinkStyled>
+                            }
+                        </RightSideMenuWrapper>
+                    </NavWrapper>
+
                 </ToolBarStyled>
             </AppBarStyled>
         </GlobalWrapper>

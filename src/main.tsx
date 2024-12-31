@@ -7,10 +7,14 @@ import {CardList} from "./components/CardList/CardList.tsx";
 import {CreateEntity} from "./components/CreateEntity.tsx";
 import {Login} from "./components/login/Login.tsx";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-import {createTheme, ThemeProvider} from "@mui/material";
+import {createTheme, responsiveFontSizes, ThemeProvider} from "@mui/material";
 import {themeOptions} from "./theme.ts";
-import {AuthProvider} from "./utils/AuthProvider.tsx";
+import {AuthProvider} from "./providers/AuthProvider.tsx";
 import {ProtectedRoute} from "./ProtectedRoute.tsx";
+import {LandingPage} from "./components/landingPage/LandingPage.tsx";
+import {Works} from "./components/Works/Works.tsx";
+import {AboutMe} from "./components/AboutMe/AboutMe.tsx";
+import {ScreenSizeProvider} from "./providers/ScreenSizeProvider.tsx";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +23,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <CardList/>
+                element: <LandingPage/>
             }
         ]
     },
@@ -48,8 +52,7 @@ const router = createBrowserRouter([
                     element: <CardList/>
                 }
             ]
-    }
-    ,
+    },
     {
         path: "/login",
         element:
@@ -61,10 +64,34 @@ const router = createBrowserRouter([
                     element: <Login/>
                 }
             ]
+    },
+    {
+        path: "/about",
+        element:
+            <App/>,
+        children:
+            [
+                {
+                    path: "/about",
+                    element: <AboutMe/>
+                }
+            ]
+    },
+    {
+        path: "/works",
+        element:
+            <App/>,
+        children:
+            [
+                {
+                    path: "/works",
+                    element: <Works/>
+                }
+            ]
     }
 ])
 
-const theme = createTheme(themeOptions)
+const theme = responsiveFontSizes(createTheme(themeOptions))
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -77,13 +104,15 @@ const queryClient = new QueryClient({
 createRoot(document.getElementById('root')!).render(
     <QueryClientProvider client={queryClient}>
         <AuthProvider>
-            <ThemeProvider theme={theme}>
-                <GlobalWrapper>
-                    <StrictMode>
-                        <RouterProvider router={router}/>
-                    </StrictMode>
-                </GlobalWrapper>
-            </ThemeProvider>
+            <ScreenSizeProvider>
+                <ThemeProvider theme={theme}>
+                    <GlobalWrapper>
+                        <StrictMode>
+                            <RouterProvider router={router}/>
+                        </StrictMode>
+                    </GlobalWrapper>
+                </ThemeProvider>
+            </ScreenSizeProvider>
         </AuthProvider>
     </QueryClientProvider>
 )

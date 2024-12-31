@@ -6,8 +6,8 @@ import {CssBaseline} from "@mui/material";
 export const App = () => {
     return (
         <>
-            <Navbar />
             <ContentWrapper>
+                <Navbar />
                 <CssBaseline/>
                 <Outlet />
             </ContentWrapper>

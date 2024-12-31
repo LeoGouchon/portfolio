@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import {Button, InputLabel, TextField} from "@mui/material";
-import {useAuth} from "../../utils/AuthProvider.tsx";
+import {useAuth} from "../../providers/AuthProvider.tsx";
 
 interface formInterface {
     team_name: string,

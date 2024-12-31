@@ -1,7 +1,7 @@
 import {Button, FormControl, FormLabel, Input, Paper, Typography} from "@mui/material";
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
-import {useAuth} from "../../utils/AuthProvider.tsx";
+import {useAuth} from "../../providers/AuthProvider.tsx";
 
 interface formInterface {
     email: string,

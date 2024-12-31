@@ -7,7 +7,7 @@ import {Button, InputLabel, Rating, TextField} from "@mui/material";
 import {RelationValue} from "./components/RelationValue.tsx";
 import {CardPreviewWrapper, RelationsWrapper, RelationWrapper} from "./AddEntity.style.tsx";
 import {DriverCardVisual} from "../CardList/card/Card.style.tsx";
-import {useAuth} from "../../utils/AuthProvider.tsx";
+import {useAuth} from "../../providers/AuthProvider.tsx";
 
 type cardRelationType = ["driver" | "team" | "car", string];
 
@@ -178,10 +178,6 @@ export const AddCard = () => {
                 ) : []
         }
     }
-
-    useEffect(() => {
-        console.log(form)
-    }, [form])
 
     return (
         <>

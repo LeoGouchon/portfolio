@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import {Button, InputLabel, NativeSelect, Skeleton, TextField} from "@mui/material";
 import {useQuery} from "@tanstack/react-query";
-import {useAuth} from "../../utils/AuthProvider.tsx";
+import {useAuth} from "../../providers/AuthProvider.tsx";
 
 interface formInterface {
     car_category: string,

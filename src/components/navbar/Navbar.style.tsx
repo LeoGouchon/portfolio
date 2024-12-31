@@ -1,31 +1,59 @@
 import styled from "@emotion/styled";
-import {AppBar, Toolbar} from "@mui/material";
+import {Toolbar} from "@mui/material";
 import {NavLink} from "react-router-dom";
-import {themeOptions} from "../../theme.ts";
 
 export const GlobalWrapper = styled.div`
     display: flex;
     width: 100%;
+    
+    position: sticky;
+    top:0;
+    z-index: 100;
+    
+    background-color: ${({ theme }) => theme.palette.background.default};
 `;
 
-export const AppBarStyled = styled(AppBar)`
+export const AppBarStyled = styled.div`
     width: 100%;
     overflow: hidden;
+
+    padding: 0;
 `;
 
 export const ToolBarStyled = styled(Toolbar)`
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0;
 
-    box-sizing: border-box; 
-    
-    display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
 `;
 
 export const NavLinkStyled = styled(NavLink)`
     text-decoration: none;
-    color: ${themeOptions?.palette?.text?.secondary ?? "#ffffff"};
+    color: ${({ theme }) => theme.palette.text.primary};
+`;
+
+export const NavWrapper = styled.nav`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+`;
+
+export const LeftSideMenuWrapper = styled.div`
+    width: 100%;
+`;
+
+export const MiddleSideMenuWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+`;
+
+export const RightSideMenuWrapper = styled.div`
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
 `;
