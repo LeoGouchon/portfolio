@@ -49,7 +49,7 @@ export const themeOptions: ThemeOptions = {
             lineHeight: 1,
         },
         h2: {
-            fontWeight: 500,
+            fontWeight: 800,
             fontFamily: 'Big Shoulders Display',
             textTransform: 'uppercase',
             lineHeight: 1,

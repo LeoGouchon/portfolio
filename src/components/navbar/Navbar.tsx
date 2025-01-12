@@ -9,7 +9,7 @@ import {
 import {useAuth} from "../../providers/AuthProvider.tsx";
 
 export const Navbar = () => {
-    const {user, logout} = useAuth()
+    const {user} = useAuth()
 
     return (
         <GlobalWrapper>
@@ -31,9 +31,6 @@ export const Navbar = () => {
                             <NavLinkStyled to="/works">
                                 Works
                             </NavLinkStyled>
-                            <NavLinkStyled to="/about">
-                                About
-                            </NavLinkStyled>
 
                         </MiddleSideMenuWrapper>
                         <RightSideMenuWrapper>
@@ -42,17 +39,17 @@ export const Navbar = () => {
                                 Contact
                             </NavLinkStyled>
 
-                            {
-                                user ?
-                                    <NavLinkStyled to="#"
-                                                   onClick={logout}
-                                    >
-                                        Log out
-                                    </NavLinkStyled> :
-                                    <NavLinkStyled to="/login">
-                                        Login
-                                    </NavLinkStyled>
-                            }
+                            {/*{*/}
+                            {/*    user ?*/}
+                            {/*        <NavLinkStyled to="#"*/}
+                            {/*                       onClick={logout}*/}
+                            {/*        >*/}
+                            {/*            Log out*/}
+                            {/*        </NavLinkStyled> :*/}
+                            {/*        <NavLinkStyled to="/login">*/}
+                            {/*            Login*/}
+                            {/*        </NavLinkStyled>*/}
+                            {/*}*/}
                         </RightSideMenuWrapper>
                     </NavWrapper>
 

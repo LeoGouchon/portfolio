@@ -11,10 +11,10 @@ import {createTheme, responsiveFontSizes, ThemeProvider} from "@mui/material";
 import {themeOptions} from "./theme.ts";
 import {AuthProvider} from "./providers/AuthProvider.tsx";
 import {ProtectedRoute} from "./ProtectedRoute.tsx";
-import {LandingPage} from "./components/landingPage/LandingPage.tsx";
 import {Works} from "./components/Works/Works.tsx";
-import {AboutMe} from "./components/AboutMe/AboutMe.tsx";
 import {ScreenSizeProvider} from "./providers/ScreenSizeProvider.tsx";
+import {LandingPage} from "./components/landingPage/LandingPage.tsx";
+import {Work} from "./components/Work/Work.tsx";
 
 const router = createBrowserRouter([
     {
@@ -66,18 +66,6 @@ const router = createBrowserRouter([
             ]
     },
     {
-        path: "/about",
-        element:
-            <App/>,
-        children:
-            [
-                {
-                    path: "/about",
-                    element: <AboutMe/>
-                }
-            ]
-    },
-    {
         path: "/works",
         element:
             <App/>,
@@ -86,6 +74,10 @@ const router = createBrowserRouter([
                 {
                     path: "/works",
                     element: <Works/>
+                },
+                {
+                    path: "/works/:id",
+                    element: <Work/>
                 }
             ]
     }
