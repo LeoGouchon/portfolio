@@ -20,5 +20,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "vite.config.ts",
+    "../../../../AppData/Local/JetBrains/IntelliJIdea2024.2/javascript/typings/express/4.17.21/node_modules/@types/node/globals.d.ts"
+  ]
 }

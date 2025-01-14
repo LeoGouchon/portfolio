@@ -1,0 +1,75 @@
+{
+  "work_id": "rzeajf-rzaorzen-bfjzebfzoa",
+  "work_name": "Nom du projet trop cool",
+  "work_short_description": "description mais pas certains qu'elle soit utilisée",
+  "work_label": "photography",
+  "work_date_to": "2024-03-01",
+  "work_date_from": "2022-11-01",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "je suis un titre de section",
+      "body": [
+        "je suis une description d'un texte, Maecenas vel sapien pulvinar, faucibus mauris vel, molestie arcu. Pellentesque eget ligula maximus turpis pulvinar auctor ut ac magna. Donec ante risus, congue id sapien eu, placerat facilisis diam. Cras condimentum sit amet velit et rutrum. Nam non quam non lacus venenatis dapibus. Duis est nibh, ullamcorper a est nec, dignissim consequat diam. Integer efficitur, lorem pellentesque eleifend bibendum, eros magna blandit lectus, nec finibus nisi purus vel enim. Suspendisse eu malesuada libero, a ornare nunc. Maecenas imperdiet cursus est, vitae aliquet tortor interdum nec. Pellentesque hendrerit ac lectus a laoreet. Duis cursus lectus a hendrerit dictum. Praesent at luctus turpis. Curabitur vitae nulla cursus, mollis sapien in, elementum ex. Etiam posuere, libero vitae cursus cursus, magna nisi cursus elit, eget posuere nisl neque nec nisi. Nunc eu leo diam. Morbi mattis bibendum risus, sed tempor urna.",
+        "je suis une description d'un texte, Maecenas vel sapien pulvinar, faucibus mauris vel, molestie arcu. Pellentesque eget ligula maximus turpis pulvinar auctor ut ac magna. Donec ante risus, congue id sapien eu, placerat facilisis diam. Cras condimentum sit amet velit et rutrum. Nam non quam non lacus venenatis dapibus. Duis est nibh, ullamcorper a est nec, dignissim consequat diam. Integer efficitur, lorem pellentesque eleifend bibendum, eros magna blandit lectus, nec finibus nisi purus vel enim. Suspendisse eu malesuada libero, a ornare nunc. Maecenas imperdiet cursus est, vitae aliquet isl neque nec nisi. Nunc eu leo diam. Morbi mattis bibendum risus, sed tempor urna."
+      ]
+    },
+    {
+      "type": "image",
+      "heading": "Description de la section image",
+      "disposition": "landscape",
+      "images": [
+        {
+          "url": "https://i.ibb.co/1vT1sMF/course-cote-limonest-2024-01.webp",
+          "alt": "Une voiture numéroté 113 KEK"
+        },
+        {
+          "url": "https://i.ibb.co/XJW82G3/24h-spa-01.webp",
+          "alt": "02 Sir Joshua Reynolds"
+        },
+        {
+          "url": "https://i.ibb.co/n1GN9dx/Marino-Sato05.png",
+          "alt": "06 Sir Joshua Reynolds"
+        },
+        {
+          "url": "https://i.ibb.co/6XLsV0w/course-cote-limonest-2023-01.webp",
+          "alt": "03 IA guecko"
+        },
+        {
+          "url": "https://i.ibb.co/n1GN9dx/Marino-Sato05.png",
+          "alt": "04 IA guecko"
+        },
+        {
+          "url": "https://i.ibb.co/n1GN9dx/Marino-Sato05.png",
+          "alt": "05 Sir Joshua Reynolds"
+        }
+      ]
+    }
+  ]
+},{
+
+
+[
+  {
+    "body": [
+      "Journée annuelle où les entreprises partenaires de l'école CPE Lyon sont invitées par l'école pour se présenter aux élèves.",
+      "Cette journée est organisée par un groupe d'une vingtaine d'élèves en dernière année. Pour cette deuxième participation, j'ai été responsable communication et gérer une équipe de 5 personnes. Il a fallu également accueillir et s'ocucper des intervenants et des entreprises présentes le jour de l'évènement."
+    ],
+    "type": "text",
+    "heading": "Organisation d'une journée pour l'école CPE Lyon"
+  },
+  {
+    "type": "image",
+    "images": [
+      {
+        "alt": "Photographie de l'amphi où se déroulait l'introduction de la journée des métiers",
+        "url": "https://i.ibb.co/YpfWdvd/jdm-2023-01.webp"
+      }
+    ],
+    "heading": "",
+    "disposition": "single"
+  }
+]
+
+
+}

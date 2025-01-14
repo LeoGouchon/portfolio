@@ -1,0 +1,178 @@
+[
+  {
+    "work_id": 0,
+    "work_date_from": "2023-11-01",
+    "work_date_to": "2023-11-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/jdm-2023-01.webp",
+    "work_label": "event",
+    "work_name": "Journée des métiers - CPE Lyon",
+    "work_short_description": "Responsable du pôle communication et création de l'identité graphique",
+    "work_relative_path": null
+  },
+  {
+    "work_id": 1,
+    "work_date_from": "2023-09-01",
+    "work_date_to": "2023-09-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/course-cote-limonest-2023-01.webp",
+    "work_label": "photography",
+    "work_name": "Course de côte de Limonest",
+    "work_short_description": "Photographies durant l'évènement de la course de côte de Limonest",
+    "work_relative_path": "/works/limonest2023/"
+  },
+  {
+    "work_id": 2,
+    "work_date_from": "2024-11-01",
+    "work_date_to": "2024-11-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/",
+    "work_label": "design",
+    "work_name": "Cartes à collectionner",
+    "work_short_description": "Création de cartes à collectionner des pilotes présents sur le championnat WEC",
+    "work_relative_path": "/works/cartesCollectionnerWEC/"
+  },
+  {
+    "work_id": 3,
+    "work_date_from": "2022-10-01",
+    "work_date_to": "2022-10-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/affiche-cpe-01.webp",
+    "work_label": "design",
+    "work_name": "Affiches vie associatives CPE Lyon",
+    "work_short_description": "Défi de réaliser une affiche par jour jusqu'à obtenir une affiche pour chaque association de l'école CPE Lyon",
+    "work_relative_path": "/works/afficheCPE/"
+  },
+  {
+    "work_id": 4,
+    "work_date_from": "2021-11-01",
+    "work_date_to": "2021-11-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/jdm-2023-01.webp",
+    "work_label": "event",
+    "work_name": "Journée des métiers - CPE Lyon",
+    "work_short_description": "Suivi de la charte graphique et création des posts pour les réseaux sociaux",
+    "work_relative_path": null
+  },
+  {
+    "work_id": 5,
+    "work_date_from": "2023-08-01",
+    "work_date_to": "2023-08-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/west-motors-01.webp",
+    "work_label": "photography",
+    "work_name": "West Motors exposition",
+    "work_short_description": "Photographie lors du premier évènement d'exposition du concessionnaire West Motors",
+    "work_relative_path": "/works/westMotors/"
+  },
+  {
+    "work_id": 6,
+    "work_date_from": "2023-05-01",
+    "work_date_to": "2023-05-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/6h-spa-2023-01.webp",
+    "work_label": "photography",
+    "work_name": "WEC - 6 hours of Spa-Francorchamps",
+    "work_short_description": "Photographies durant l'évènement des 6 heures de Spa-Francorchamps",
+    "work_relative_path": "/works/WEC6h2023/"
+  },
+  {
+    "work_id": 7,
+    "work_date_from": "2020-08-01",
+    "work_date_to": "2024-11-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/cpe-lyon-01.webp",
+    "work_label": "programming",
+    "work_name": "Etudiant - CPE Lyon",
+    "work_short_description": "Ecole d'ingénieur en spécialité Conception Logiciel et Big Data",
+    "work_relative_path": null
+  },
+  {
+    "work_id": 8,
+    "work_date_from": "2024-02-01",
+    "work_date_to": "2024-02-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/affiche-wec-01.webp",
+    "work_label": "design",
+    "work_name": "Affiches écuries WEC",
+    "work_short_description": "Défi de réaliser une affiche par écurie présente lors de la saison 2024 de la coupe du monde d'endurance en sport automobile (WEC)",
+    "work_relative_path": "/works/afficheWEC/"
+  },
+  {
+    "work_id": 9,
+    "work_date_from": "2024-11-01",
+    "work_date_to": "2024-11-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/dorianne-pin-booster-01.webp",
+    "work_label": "design",
+    "work_name": "Booster pack - Dorianne Pin",
+    "work_short_description": "Création d'un booster de carte imaginaire de la pilote Dorianne Pin",
+    "work_relative_path": "/works/doriannePin/"
+  },
+  {
+    "work_id": 10,
+    "work_date_from": "2022-08-01",
+    "work_date_to": "2024-01-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/pricing-pact-01.webp",
+    "work_label": "programming",
+    "work_name": "Fullstack Developer - Pricing Pact",
+    "work_short_description": "Stage en tant que développeur fullstack",
+    "work_relative_path": null
+  },
+  {
+    "work_id": 11,
+    "work_date_from": "2024-05-01",
+    "work_date_to": "2024-05-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/6h-spa-2024-01.webp",
+    "work_label": "photography",
+    "work_name": "WEC - 6 hours of Spa-Francorchamps",
+    "work_short_description": "Photographies lors de l'évènement automobile",
+    "work_relative_path": "/works/WEC6h2024/"
+  },
+  {
+    "work_id": 12,
+    "work_date_from": "2023-06-01",
+    "work_date_to": "2023-06-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/24h-spa-01.webp",
+    "work_label": "photography",
+    "work_name": "WEC - Crowdstrike 24h Spa-Francorchamps",
+    "work_short_description": "Photographies durant l'évènement des 24 heures de Spa-Francorchamps",
+    "work_relative_path": "/works/WEC24h2023/"
+  },
+  {
+    "work_id": 13,
+    "work_date_from": "2024-09-01",
+    "work_date_to": "2024-09-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/course-cote-limonest-2024-01.webp",
+    "work_label": "photography",
+    "work_name": "Course de côte de Limonest",
+    "work_short_description": "Photographies durant l'évènement de la course de côte de Limonest",
+    "work_relative_path": "/works/limonest2024/"
+  },
+  {
+    "work_id": 14,
+    "work_date_from": "2023-11-01",
+    "work_date_to": "2023-11-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/tedx-cpe-lyon-01.webp",
+    "work_label": "event",
+    "work_name": "TEDx CPE Lyon",
+    "work_short_description": "Réalisation du premier évènement TEDx au sein de l'école CPE Défi de réaliser une affiche par jour jusqu'à obtenir une affiche pour chaque association de l'école CPE Lyon",
+    "work_relative_path": "/works/tedx/"
+  },
+  {
+    "work_id": 15,
+    "work_date_from": "2024-02-01",
+    "work_date_to": "2024-08-01",
+    "work_has_dedicated_page": false,
+    "work_image_showcase": "/works/showcase/groupe-seb-01.webp",
+    "work_label": "programming",
+    "work_name": "Data Engineer - Groupe SEB",
+    "work_short_description": "Revoir le processus d'anonymisation de la donnée personnel au sein du datalake du Groupe SEB",
+    "work_relative_path": null
+  }
+]
