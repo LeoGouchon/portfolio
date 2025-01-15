@@ -67,19 +67,19 @@ export const Work = () => {
 
     return (
         <GlobalWrapper>
-            <HeaderWrapper>
-                <Typography variant={"h1"}>{workData.work_name}</Typography>
-                <Typography
-                    variant={"h2"}>{dateToDisplay(workData.work_date_from, workData.work_date_to)}</Typography>
-            </HeaderWrapper>
-            {workData?.work_content?.map((section: sectionsInterface, index: number): ReactNode =>
-                <div key={index}>
-                    <Divider />
-                    {
-                        section.type === "image" ? imageSection(section as imageSectionInterface) : textSection(section as textSectionInterface)
-                    }
-                </div>
-            )}
+            {/*<HeaderWrapper>*/}
+            {/*    <Typography variant={"h1"}>{workData.work_name}</Typography>*/}
+            {/*    <Typography*/}
+            {/*        variant={"h2"}>{dateToDisplay(workData.work_date_from, workData.work_date_to)}</Typography>*/}
+            {/*</HeaderWrapper>*/}
+            {/*{workData?.work_content?.map((section: sectionsInterface, index: number): ReactNode =>*/}
+            {/*    <div key={index}>*/}
+            {/*        <Divider />*/}
+            {/*        {*/}
+            {/*            section.type === "image" ? imageSection(section as imageSectionInterface) : textSection(section as textSectionInterface)*/}
+            {/*        }*/}
+            {/*    </div>*/}
+            {/*)}*/}
         </GlobalWrapper>
     )
 }

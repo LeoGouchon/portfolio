@@ -3,13 +3,11 @@ import {createRoot} from 'react-dom/client'
 import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {GlobalWrapper} from "./global.style.tsx";
-import {CreateEntity} from "./components/CreateEntity.tsx";
 import {Login} from "./components/login/Login.tsx";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import {createTheme, responsiveFontSizes, ThemeProvider} from "@mui/material";
 import {themeOptions} from "./theme.ts";
 import {AuthProvider} from "./providers/AuthProvider.tsx";
-import {ProtectedRoute} from "./ProtectedRoute.tsx";
 import {Works} from "./components/Works/Works.tsx";
 import {ScreenSizeProvider} from "./providers/ScreenSizeProvider.tsx";
 import {LandingPage} from "./components/landingPage/LandingPage.tsx";
@@ -23,20 +21,6 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <LandingPage/>
-            }
-        ]
-    },
-    {
-        path: "/create",
-        element: <App/>,
-        children: [
-            {
-                path: "/create",
-                element: (
-                    <ProtectedRoute>
-                        <CreateEntity/>
-                    </ProtectedRoute>
-                )
             }
         ]
     },
