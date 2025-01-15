@@ -27,7 +27,7 @@ export const Hobbies = () => {
                 <HobbyWrapper screensize={screenSize} img={"/public/home/videoGame.jpg"}>
                     <Typography variant={"h2"}>Jeux vidéo</Typography>
                 </HobbyWrapper>
-                <HobbyWrapper screensize={screenSize} img={"/public/home/automotiveSport.jpg"}>
+                <HobbyWrapper screensize={screenSize} img={path.resolve('./public', '/home/automotiveSport.jpg')}>
                     <Typography variant={"h2"}>Sport automobile</Typography>
                 </HobbyWrapper>
             </HobbiesWrapper>
