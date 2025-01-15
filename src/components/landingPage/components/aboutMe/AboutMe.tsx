@@ -8,7 +8,7 @@ export const AboutMe = () => {
     return (
         <GlobalWrapper>
             <IntroductionWrapper screensize={screenSize}>
-                <ImageWrapper img={"https://i.ibb.co/xffgkdV/pricing-pact-01.webp"} screensize={screenSize} />
+                <ImageWrapper img={"/works/showcase/pricing-pact-01.webp"} screensize={screenSize} />
                 <TextWrapper screensize={screenSize}>
                     <Typography variant={"h2"}>"Un ingénieur inspiré par l'art"</Typography>
                     <DescriptionStyled variant={"body1"} screensize={screenSize}>

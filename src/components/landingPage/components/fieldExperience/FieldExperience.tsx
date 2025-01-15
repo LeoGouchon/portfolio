@@ -19,25 +19,25 @@ export const FieldExperience = () => {
         id: 1,
         name: "Photography",
         description: "Découvert en 2023 lors des 6 heures de Spa-Francorchamps, la photographie est devenue une passion ponctuelle. Elle me permet d'exprimer et de sauvegarder les évènements (automobiles principalement) auquels j'assiste dans ma vie.",
-        image: "public/works/showcase/24h-spa-01.webp",
+        image: "/works/showcase/24h-spa-01.webp",
         imageAlt: "Photographie (par Léo Gouchon) des 24H Crowdstrike Spa-Francorchamps 2023"
     }, {
         id: 2,
         name: "Design",
         description: "Découvrir Adobe Photoshop au collège a sans doute été un tournant dans ma vie. J'ai découvert et appris le graphisme en autodicacte et en m'amusant. Cela me permet maintenant d'élaborer des projets plus complexes.",
-        image: "public/works/showcase/dorianne-pin-booster-01.webp",
+        image: "/works/showcase/dorianne-pin-booster-01.webp",
         imageAlt: "Cartes à collectionner de la pilote Dorianne Pin"
     }, {
         id: 3,
         name: "Event",
         description: "Participer a des évènements en tant qu'organisateur est toujours gratifiant en regardant le résultat final. Je peux apporter mon expertise en matière de graphisme tout en gérant des équipes de différentes tailles.",
-        image: "public/works/showcase/tedx-cpe-lyon-01.webp",
+        image: "/works/showcase/tedx-cpe-lyon-01.webp",
         imageAlt: "Photographie (par Léo Gouchon) du TEDx CPE Lyon 2023"
     }, {
         id: 4,
         name: "Tech",
         description: "Mon choix professionel. Diplomé en 2024 de CPE Lyon en tant qu'ingénieur numérique spécialité Conception Logiciel et Big Data. Découvrir de nouvelles technologies et explorer le monde de la data ont toujours attisés ma curiosité.",
-        image: "public/works/showcase/pricing-pact-01.webp",
+        image: "/works/showcase/pricing-pact-01.webp",
         imageAlt: "Photographie (par Jonagraphe) lors du stage chez Givemefive (anciennement PricingPact)"
     }];
 
