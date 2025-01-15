@@ -22,13 +22,13 @@ export const Hobbies = () => {
                     </Typography>
             </TextWrapper>
             <HobbiesWrapper screensize={screenSize}>
-                <HobbyWrapper screensize={screenSize} img={"/public/home/design.jpg"}>
+                <HobbyWrapper screensize={screenSize} img={"/home/design.jpg"}>
                     <Typography variant={"h2"}>Design</Typography>
                 </HobbyWrapper>
-                <HobbyWrapper screensize={screenSize} img={"/public/home/videoGame.jpg"}>
+                <HobbyWrapper screensize={screenSize} img={"/home/videoGame.jpg"}>
                     <Typography variant={"h2"}>Jeux vidéo</Typography>
                 </HobbyWrapper>
-                <HobbyWrapper screensize={screenSize} img={path.resolve('./public', '/home/automotiveSport.jpg')}>
+                <HobbyWrapper screensize={screenSize} img={"/home/automotiveSport.jpg"}>
                     <Typography variant={"h2"}>Sport automobile</Typography>
                 </HobbyWrapper>
             </HobbiesWrapper>
