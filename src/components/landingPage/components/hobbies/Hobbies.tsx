@@ -1,6 +1,7 @@
 import {GlobalWrapper, HobbiesWrapper, HobbyWrapper, TextWrapper} from "./Hobbies.style.tsx";
 import {Typography} from "@mui/material";
 import {useScreenSizeContext} from "../../../../providers/ScreenSizeProvider.tsx";
+import path from "path";
 
 export const Hobbies = () => {
     const screenSize = useScreenSizeContext();
