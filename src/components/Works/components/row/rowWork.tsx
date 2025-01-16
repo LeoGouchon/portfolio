@@ -2,7 +2,7 @@ import {
     ChipStyled, ChipWrapper,
     MobileTableCellStyled, NameAndChipWrapper,
     TableCellChipStyled, TableCellShowCaseStyled,
-    TableCellStyled,
+    TableCellStyled, TableRowPrimaryStyled,
     TableRowStyled,
     TableYearStyled, YearStyled
 } from "../../Works.style.tsx";
@@ -33,7 +33,7 @@ export const RowWork = (props: RowWorkProps): ReactNode => {
 
     return (
         <React.Fragment>
-            <TableRowStyled key={w.work_id} onClick={() => {
+            <TableRowPrimaryStyled key={w.work_id} onClick={() => {
                 handleClick(w)
             }}>
                 {screensize > 1 ? <>
@@ -67,7 +67,7 @@ export const RowWork = (props: RowWorkProps): ReactNode => {
                         <YearStyled variant={"h3"}>{dateToDisplay(w.work_date_from, w.work_date_to)}</YearStyled>
                     </MobileTableCellStyled>
                 }
-            </TableRowStyled>
+            </TableRowPrimaryStyled>
             <TableRowStyled>
                 <TableCellShowCaseStyled colSpan={5}>
                     <Collapse in={isOpen()} timeout="auto" unmountOnExit>

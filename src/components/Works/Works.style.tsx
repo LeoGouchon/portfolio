@@ -70,6 +70,9 @@ export const NumberAnimation = styled.span<NumberAnimationProps>`
 `;
 
 export const TableRowStyled = styled(TableRow)`
+`;
+
+export const TableRowPrimaryStyled = styled(TableRowStyled)`
     cursor: pointer;
 `;
 
