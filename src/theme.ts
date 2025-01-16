@@ -62,21 +62,26 @@ export const themeOptions: ThemeOptions = {
             fontFamily: 'Big Shoulders Display',
             textTransform: 'uppercase',
             lineHeight: 1,
+            fontWeight: 800,
         },
         h4: {
             fontFamily: 'Big Shoulders Display',
             textTransform: 'uppercase',
             lineHeight: 1.2,
+            fontWeight: 800,
         },
         h5: {
             fontFamily: 'Big Shoulders Display',
             textTransform: 'uppercase',
             lineHeight: 1.2,
+            fontWeight: 800,
         },
         h6: {
             fontFamily: 'Big Shoulders Display',
             textTransform: 'uppercase',
             lineHeight: 1.2,
+            fontWeight: 800,
+
         },
         subtitle1: {
             fontFamily: 'roboto',

@@ -27,7 +27,7 @@ export type WorkType = {
     work_name: string;
     work_short_description: string;
     work_image_showcase: string;
-    work_has_dedicated_page: boolean;
+    work_dedicated_page: any[] | null; // TODO
     work_label: string;
     work_date_from: string;
     work_date_to: string;
@@ -140,7 +140,7 @@ export const Works = () => {
                             </TableHeadStyled>
                             <TableBody>
                                 {
-                                        worksData?.map((work: WorkType) => (
+                                        worksData?.filter((w: WorkType) => fieldFilter.includes(w.work_label) || fieldFilter.length === 0).map((work: WorkType) => (
                                             <RowWork
                                                 key={work.work_id}
                                                 screensize={screenSize}

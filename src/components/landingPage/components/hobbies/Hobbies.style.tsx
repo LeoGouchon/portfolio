@@ -3,7 +3,7 @@ import {ScreenSizeInterface} from "../../../../global.style.tsx";
 import {getGapValue} from "../../../../utils/CssUtils.ts";
 import {css} from "@mui/material";
 
-interface GlobalWrapperProps extends ScreenSizeInterface {};
+interface GlobalWrapperProps extends ScreenSizeInterface {}
 
 export const GlobalWrapper = styled.div<GlobalWrapperProps>`
     display: flex;
@@ -43,7 +43,7 @@ export const HobbyWrapper = styled.div<HobbyWrapperProps>`
     `}
 `;
 
-interface HobbiesProps extends ScreenSizeInterface {};
+interface HobbiesProps extends ScreenSizeInterface {}
 
 export const HobbiesWrapper = styled.div<HobbiesProps>`
     display: flex;
@@ -52,16 +52,23 @@ export const HobbiesWrapper = styled.div<HobbiesProps>`
     align-items: center;
     width: 100%;
     gap: 0;
+    margin-bottom: ${props => getGapValue(props.screensize)};
     
     ${(props) => props.screensize === 1 && css`
         flex-direction: column-reverse;
     `}
 `;
 
-interface TextWrapperProps extends ScreenSizeInterface{};
+interface TextWrapperProps extends ScreenSizeInterface{}
 
 export const TextWrapper = styled.div<TextWrapperProps>`
     display: flex;
     flex-direction: column;
-    gap: ${props => getGapValue(props.screensize)}
+    align-items: start;
+    justify-content: start;
+    gap: ${props => getGapValue(props.screensize)};
+
+    > * {
+        width: ${props => props.screensize >= 3 ? "66%" : "100%"};
+    }
 `;

@@ -28,7 +28,7 @@ export const ShowcaseWork = ({highlightWork}: {highlightWork: WorkType}) => {
                     <Button
                         variant={"outlined"}
                         color={"inherit"}
-                        disabled={!highlightWork?.work_has_dedicated_page}
+                        disabled={!highlightWork?.work_dedicated_page}
                         onClick={() => navigate(`/works/${highlightWork?.work_id}`)}
                     >
                         Show more

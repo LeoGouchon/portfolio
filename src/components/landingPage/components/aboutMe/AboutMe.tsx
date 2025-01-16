@@ -10,11 +10,10 @@ export const AboutMe = () => {
             <IntroductionWrapper screensize={screenSize}>
                 <ImageWrapper img={"/works/showcase/pricing-pact-01.webp"} screensize={screenSize} />
                 <TextWrapper screensize={screenSize}>
-                    <Typography variant={"h2"}>"Un ingénieur inspiré par l'art"</Typography>
+                    <Typography variant={"h2"}>"Un mélange d'ingénieur et d'artiste"</Typography>
                     <DescriptionStyled variant={"body1"} screensize={screenSize}>
-                            Je m'appelle Léo, 23 ans, jeune diplomé en tant qu'ingénieur logiciel et big data à Lyon.
-                            Je fais également du graphisme et de la photographie.
-                            Je suis un texte introductif pour donner un peu de hype.
+                        Je m'appelle Léo, j'ai 23 ans et je suis récemment diplômé en ingénierie logicielle et big data à Lyon.
+                        Passionné par les nouvelles technologies et l'art, je développe mes propres projets de graphisme et de photographie en parallèle de mon travail.
                     </DescriptionStyled>
                 </TextWrapper>
             </IntroductionWrapper>

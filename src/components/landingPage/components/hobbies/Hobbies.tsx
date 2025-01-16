@@ -11,14 +11,11 @@ export const Hobbies = () => {
                 <Typography variant={"h2"}>
                     Mes passions
                 </Typography>
-                    <Typography variant={"body1"}>
-                        J'ai toujours aimé créer, gérer et accomplir des projets quels qu'il soit.
-                        Avoir trois passions peut sembler chronophage, sauf quand on arrive à les fusionner.
-                        Voilà comment j'arrive à trouver de l'inspiration et enrichir ma créativité :
-                        Et pourquoi pas créer une affiche par voiture licensiée dans un championnat automobile et éditer
-                        un livre contenant ces affiches ? (le projet en question)
-                        S'entrainer à la photographie grâce aux simulateurs automobiles ? :check:
-                    </Typography>
+                <Typography variant={"body1"}>
+                    J'ai toujours aimé créer, gérer et mener à bien des projets, quels qu'ils soient. À première vue,
+                    avoir trois passions peut sembler chronophage, mais tout change lorsqu'on peut les fusionner.
+                    C'est ainsi que je trouve mes nouveaux projets, mon inspiration et enrichi ma créativité.
+                </Typography>
             </TextWrapper>
             <HobbiesWrapper screensize={screenSize}>
                 <HobbyWrapper screensize={screenSize} img={"/home/design.jpg"}>

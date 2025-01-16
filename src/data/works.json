@@ -3,7 +3,48 @@
     "work_id": 0,
     "work_date_from": "2023-11-01",
     "work_date_to": "2023-11-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "text": [
+              "Journée annuelle où les entreprises partenaires de l'école CPE Lyon sont invitées par l'école pour se présenter aux élèves.",
+              "Cette journée est organisée par un groupe d'une vingtaine d'élèves en dernière année. Pour ma deuxième participation, j'ai été responsable communication et gérer une équipe de 5 personnes. Il a fallu également accueillir et s'ocucper des intervenants et des entreprises présentes le jour de l'évènement."
+            ],
+            "heading": "Organisation d'une journée pour l'école CPE Lyon",
+            "headingSize": "h2"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Rôle",
+            "headingSize": "h2",
+            "text": [
+              "Responsable du pôle communication",
+              "Création de l'identité graphique de l'évènement",
+              "Création des visuels (numériques et physiques) liés à l'évènement",
+              "Aide lors de la préparation logistique",
+              "Permanence pour accueillir et gérer les entreprises et élèves (environ 50 entreprises avec 3 à 6 personnes par entreprise et 500 élèves au cours de la journée)"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "images": [
+          {
+            "alt": "Photographie de l'amphi où se déroulait l'introduction de la journée des métiers",
+            "url": "/works/showcase/jdm-2023-01.webp"
+          }
+        ],
+        "heading": "",
+        "disposition": "single"
+      }
+    ],
     "work_image_showcase": "/works/showcase/jdm-2023-01.webp",
     "work_label": "event",
     "work_name": "Journée des métiers - CPE Lyon",
@@ -14,7 +55,61 @@
     "work_id": 1,
     "work_date_from": "2023-09-01",
     "work_date_to": "2023-09-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "text": [
+              "La course de côte de Limonest est une course dans la région Lyonnaise. Elle fait partie intégrante du championnat de montagne de la FFSA (Fédération Française de Sport Automobile)",
+              "C'est la première fois que j'assistais à une course contre-la-montre. Contrairement à une course sur circuit, il n'y a pas de place pour l'erreur puisque chaque pilote ne roule que deux ou trois fois dans la journée",
+              "L'objectif de ce shooting photo était de découvrir l'évènement tout en essayant de chercher des bons spots pour les photos."
+            ],
+            "heading": "Une course locale pour le titre de champion des montagnes",
+            "headingSize": "h2"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "images": [
+          {
+            "alt": "Porsche blanche - course de côte de Limonest",
+            "url": "/works/limonest2023/2023_Limonest_01.webp"
+          },
+          {
+            "alt": "BMW vue rapprochée de face",
+            "url": "/works/limonest2023/2023_Limonest_02.webp"
+          },
+          {
+            "alt": "Pilote assis dans son baquet de profil",
+            "url": "/works/limonest2023/2023_Limonest_03.webp"
+          },
+          {
+            "alt": "Plan serré d'un pilote dans sa monoplace",
+            "url": "/works/limonest2023/2023_Limonest_04.webp"
+          },
+          {
+            "alt": "Plan serré d'une monoplace dans une épingle",
+            "url": "/works/limonest2023/2023_Limonest_05.webp"
+          },
+          {
+            "alt": "Redescente de la course de plusieurs concurrents",
+            "url": "/works/limonest2023/2023_Limonest_06.webp"
+          },
+          {
+            "alt": "Monoplace en trainée",
+            "url": "/works/limonest2023/2023_Limonest_07.webp"
+          },
+          {
+            "alt": "Tandem de drift dans une épingle",
+            "url": "/works/limonest2023/2023_Limonest_08.webp"
+          }
+        ],
+        "heading": "",
+        "disposition": "portrait"
+      }
+    ],
     "work_image_showcase": "/works/showcase/course-cote-limonest-2023-01.webp",
     "work_label": "photography",
     "work_name": "Course de côte de Limonest",
@@ -22,21 +117,177 @@
     "work_relative_path": "/works/limonest2023/"
   },
   {
-    "work_id": 2,
-    "work_date_from": "2024-11-01",
-    "work_date_to": "2024-11-01",
-    "work_has_dedicated_page": false,
-    "work_image_showcase": "/works/showcase/",
-    "work_label": "design",
-    "work_name": "Cartes à collectionner",
-    "work_short_description": "Création de cartes à collectionner des pilotes présents sur le championnat WEC",
-    "work_relative_path": "/works/cartesCollectionnerWEC/"
-  },
-  {
     "work_id": 3,
     "work_date_from": "2022-10-01",
     "work_date_to": "2022-10-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "text": [
+              "Il existe des associations au sein de l'école CPE Lyon. Chaque année, il y a une présentation des associations en début d'année pour les nouveaux élèves. Je trouvais cela dommage qu'il n'y ai aucun moyen de reconnaitre visuellement chaque association.",
+              "Voulant m'entrainer sur Adobe Photoshop de manière journalière, j'ai décidé de créer une affiche chaque jour, pour chaque association de l'école.",
+              "Les contraintes étaient d'utiliser uniquement des images stocks (notamment d'unsplash) et ne jamais dépasser les 2 heures par affiche."
+            ],
+            "heading": "Une affiche par jour pour des associations d'école",
+            "headingSize": "h2"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "sections": [
+          {
+            "text": [
+              "Réalisation de 33 affiches dans un délai de 40 jours",
+              "Réaliser des affiches uniquement avec des stocks images (image libre de droit)"
+            ],
+            "heading": "Résultats",
+            "headingSize": "h2"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "images": [
+          {
+            "alt": "Affiche: Bureau Des Elèves",
+            "url": "/works/afficheCPE/BDE.webp"
+          },
+          {
+            "alt": "Affiche: 5AP",
+            "url": "/works/afficheCPE/5AP.webp"
+          },
+          {
+            "alt": "Affiche: Apaches",
+            "url": "/works/afficheCPE/Apaches.webp"
+          },
+          {
+            "alt": "Affiche: Asso du Chef",
+            "url": "/works/afficheCPE/AssoDuChef.webp"
+          },
+          {
+            "alt": "Affiche: Assostainable",
+            "url": "/works/afficheCPE/AssoStainable.webp"
+          },
+          {
+            "alt": "Affiche: BDA",
+            "url": "/works/afficheCPE/BDA.webp"
+          },
+          {
+            "alt": "Affiche: BDJ",
+            "url": "/works/afficheCPE/BDJ.webp"
+          },
+          {
+            "alt": "Affiche: BDS",
+            "url": "/works/afficheCPE/BDS.webp"
+          },
+          {
+            "alt": "Affiche: Cacophonie",
+            "url": "/works/afficheCPE/Cacophonie.webp"
+          },
+          {
+            "alt": "Affiche: Canut Déchaîné",
+            "url": "/works/afficheCPE/CanutDéchaîné.webp"
+          },
+          {
+            "alt": "Affiche: Cheerokees",
+            "url": "/works/afficheCPE/Cheerokees.webp"
+          },
+          {
+            "alt": "Affiche: Chimistes en herbe",
+            "url": "/works/afficheCPE/ChimistesEnHerbe.webp"
+          },
+          {
+            "alt": "Affiche: Club Musique",
+            "url": "/works/afficheCPE/ClubMusique.webp"
+          },
+          {
+            "alt": "Affiche: Club Theatre",
+            "url": "/works/afficheCPE/ClubTheatre.webp"
+          },
+          {
+            "alt": "Affiche: CPE Run",
+            "url": "/works/afficheCPE/CPErun.webp"
+          },
+          {
+            "alt": "Affiche: Gala",
+            "url": "/works/afficheCPE/Gala.webp"
+          },
+          {
+            "alt": "Affiche: Galileo",
+            "url": "/works/afficheCPE/Galileo.webp"
+          },
+          {
+            "alt": "Affiche: Hip Hop",
+            "url": "/works/afficheCPE/HipHop.webp"
+          },
+          {
+            "alt": "Affiche: Journée des métiers",
+            "url": "/works/afficheCPE/JournéeDesMetiers.webp"
+          },
+          {
+            "alt": "Affiche: KeyTones",
+            "url": "/works/afficheCPE/KeyTones.webp"
+          },
+          {
+            "alt": "Affiche: Kinémathèque",
+            "url": "/works/afficheCPE/Kinémathèque.webp"
+          },
+          {
+            "alt": "Affiche: La Boutique",
+            "url": "/works/afficheCPE/LaBoutique.webp"
+          },
+          {
+            "alt": "Affiche: LaSoRock",
+            "url": "/works/afficheCPE/LaSoRock.webp"
+          },
+          {
+            "alt": "Affiche: Oenologie",
+            "url": "/works/afficheCPE/Oeonologie.webp"
+          },
+          {
+            "alt": "Affiche: Olfaction",
+            "url": "/works/afficheCPE/Olfaction.webp"
+          },
+          {
+            "alt": "Affiche: Orgasmix",
+            "url": "/works/afficheCPE/Orgasmix.webp"
+          },
+          {
+            "alt": "Affiche: Petoche",
+            "url": "/works/afficheCPE/Petoche.webp"
+          },
+          {
+            "alt": "Affiche: Poucedor",
+            "url": "/works/afficheCPE/Poucedor.webp"
+          },
+          {
+            "alt": "Affiche: Shootime",
+            "url": "/works/afficheCPE/ShooTime.webp"
+          },
+          {
+            "alt": "Affiche: Ski club",
+            "url": "/works/afficheCPE/SkiClub.webp"
+          },
+          {
+            "alt": "Affiche: Synergie",
+            "url": "/works/afficheCPE/Synergie.webp"
+          },
+          {
+            "alt": "Affiche: Tous à voile",
+            "url": "/works/afficheCPE/TousAVoile.webp"
+          },
+          {
+            "alt": "Affiche: Zythologie",
+            "url": "/works/afficheCPE/Zythologie.webp"
+          }
+        ],
+        "heading": "Résultat du travail",
+        "disposition": "portrait"
+      }
+    ],
     "work_image_showcase": "/works/showcase/affiche-cpe-01.webp",
     "work_label": "design",
     "work_name": "Affiches vie associatives CPE Lyon",
@@ -47,7 +298,47 @@
     "work_id": 4,
     "work_date_from": "2021-11-01",
     "work_date_to": "2021-11-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "text": [
+              "Journée annuelle où les entreprises partenaires de l'école CPE Lyon sont invitées pour se présenter aux élèves.",
+              "Cette journée est organisée par un groupe d'une vingtaine d'élèves en dernière année. Exceptionnellement, j'ai pu participer exceptionnellement à l'organisation en tant que 4e année."
+            ],
+            "heading": "Organisation d'une journée pour l'école CPE Lyon",
+            "headingSize": "h2"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Rôle",
+            "headingSize": "h2",
+            "text": [
+              "Membre du pôle communication",
+              "Création des visuels (numériques et physiques) liés à l'évènement",
+              "Aide lors de la préparation logistique",
+              "Permanence pour accueillir et gérer les entreprises et élèves (environ 50 entreprises avec 3 à 6 personnes par entreprise et 500 élèves au cours de la journée)"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "images": [
+          {
+            "alt": "Photographie de l'amphi où se déroulait l'introduction de la journée des métiers",
+            "url": "/works/showcase/jdm-2023-01.webp"
+          }
+        ],
+        "heading": "",
+        "disposition": "single"
+      }
+    ],
     "work_image_showcase": "/works/showcase/jdm-2023-01.webp",
     "work_label": "event",
     "work_name": "Journée des métiers - CPE Lyon",
@@ -58,7 +349,58 @@
     "work_id": 5,
     "work_date_from": "2023-08-01",
     "work_date_to": "2023-08-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Exposition",
+            "headingSize": "h2",
+            "text": [
+              "West Motors est un spécialiste lyonnais dans les voitures de sport et de luxe.",
+              "Pour la première fois, ils ont organisé une exposition ouverte au public sous réservation. De quoi pouvoir prendre des photos des voitures des clients."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "images": [
+          {
+            "url": "/works/westMotors/westMotors01.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/westMotors/westMotors02.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/westMotors/westMotors03.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/westMotors/westMotors04.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/westMotors/westMotors05.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },{
+            "url": "/works/westMotors/westMotors06.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },{
+            "url": "/works/westMotors/westMotors07.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },{
+            "url": "/works/westMotors/westMotors08.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },{
+            "url": "/works/westMotors/westMotors09.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          }
+        ]
+      }
+    ],
     "work_image_showcase": "/works/showcase/west-motors-01.webp",
     "work_label": "photography",
     "work_name": "West Motors exposition",
@@ -69,7 +411,7 @@
     "work_id": 6,
     "work_date_from": "2023-05-01",
     "work_date_to": "2023-05-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/6h-spa-2023-01.webp",
     "work_label": "photography",
     "work_name": "WEC - 6 hours of Spa-Francorchamps",
@@ -80,7 +422,7 @@
     "work_id": 7,
     "work_date_from": "2020-08-01",
     "work_date_to": "2024-11-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/cpe-lyon-01.webp",
     "work_label": "programming",
     "work_name": "Etudiant - CPE Lyon",
@@ -91,7 +433,7 @@
     "work_id": 8,
     "work_date_from": "2024-02-01",
     "work_date_to": "2024-02-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/affiche-wec-01.webp",
     "work_label": "design",
     "work_name": "Affiches écuries WEC",
@@ -102,7 +444,7 @@
     "work_id": 9,
     "work_date_from": "2024-11-01",
     "work_date_to": "2024-11-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/dorianne-pin-booster-01.webp",
     "work_label": "design",
     "work_name": "Booster pack - Dorianne Pin",
@@ -113,7 +455,7 @@
     "work_id": 10,
     "work_date_from": "2022-08-01",
     "work_date_to": "2024-01-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/pricing-pact-01.webp",
     "work_label": "programming",
     "work_name": "Fullstack Developer - Pricing Pact",
@@ -124,7 +466,7 @@
     "work_id": 11,
     "work_date_from": "2024-05-01",
     "work_date_to": "2024-05-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/6h-spa-2024-01.webp",
     "work_label": "photography",
     "work_name": "WEC - 6 hours of Spa-Francorchamps",
@@ -135,7 +477,7 @@
     "work_id": 12,
     "work_date_from": "2023-06-01",
     "work_date_to": "2023-06-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/24h-spa-01.webp",
     "work_label": "photography",
     "work_name": "WEC - Crowdstrike 24h Spa-Francorchamps",
@@ -146,7 +488,7 @@
     "work_id": 13,
     "work_date_from": "2024-09-01",
     "work_date_to": "2024-09-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": null,
     "work_image_showcase": "/works/showcase/course-cote-limonest-2024-01.webp",
     "work_label": "photography",
     "work_name": "Course de côte de Limonest",
@@ -157,18 +499,135 @@
     "work_id": 14,
     "work_date_from": "2023-11-01",
     "work_date_to": "2023-11-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Le premier TEDx organisé à CPE Lyon",
+            "headingSize": "h2",
+            "text": [
+              "TEDx est un programme d'événements organisés localement, sous licence de TED, où des conférenciers partagent des idées inspirantes dans le format des célèbres conférences TED. Ces événements sont indépendants et permettent de diffuser des idées innovantes à l'échelle locale.",
+              "Avec seulement une équipe de quatre personnes, nous avons organisé le premier évènement TEDx dans l'école CPE Lyon.",
+              "Cinq intervenants (ou plus communément appelé speaker) qui sont venus présentés leurs idées"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Rôle",
+            "headingSize": "h2",
+            "text": [
+              "Vice-président",
+              "Création de l'identité graphique de l'évènement",
+              "Création des visuels (physiques et numériques)",
+              "Recherche et suivi des speakers (intervenants) de la soirée",
+              "Accompagnement de deux speakers",
+              "Mise en place de la scène"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "images": [
+          {
+            "alt": "Photos de l'évènement TEDx CPE Lyon",
+            "url": "/works/tedx/tedx01.webp"
+          },
+          {
+            "alt": "Photos de l'évènement TEDx CPE Lyon",
+            "url": "/works/tedx/tedx02.webp"
+          },
+          {
+            "alt": "Photos de l'évènement TEDx CPE Lyon",
+            "url": "/works/tedx/tedx03.webp"
+          },
+          {
+            "alt": "Photos de l'évènement TEDx CPE Lyon",
+            "url": "/works/tedx/tedx04.webp"
+          },
+          {
+            "alt": "Photos de l'évènement TEDx CPE Lyon",
+            "url": "/works/tedx/tedx05.webp"
+          }
+        ],
+        "heading": "Photos de l'évènements et des speakers",
+        "disposition": "portrait"
+      }
+    ],
     "work_image_showcase": "/works/showcase/tedx-cpe-lyon-01.webp",
     "work_label": "event",
     "work_name": "TEDx CPE Lyon",
-    "work_short_description": "Réalisation du premier évènement TEDx au sein de l'école CPE Défi de réaliser une affiche par jour jusqu'à obtenir une affiche pour chaque association de l'école CPE Lyon",
+    "work_short_description": "Réalisation du premier évènement TEDx au sein de l'école CPE Lyon",
     "work_relative_path": "/works/tedx/"
   },
   {
     "work_id": 15,
     "work_date_from": "2024-02-01",
     "work_date_to": "2024-08-01",
-    "work_has_dedicated_page": false,
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Data Engineer - 6 mois",
+            "headingSize": "h2",
+            "text": [
+              "Mise en place d’un nouveau système de traitement pour respecter les normes RGPD au sein du datalake.",
+              "Travail sous AWS et développement en Python / Scala / Spark"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Actions",
+            "headingSize": "h2",
+            "text": [
+              "   - Création de différents processus utilisant des modules AWS (Lambda, Step Functions, S3, Glue)",
+              "   - Apprentissage personnel du Scala et du Spark",
+              "   - Création et application d'une architecture du processus à mettre en place",
+              "   - Implémentation de test unitaire sur le nouveau processus",
+              "   - Implémentation des outils internes (framework, CI/CD) au sein du nouveau processus",
+              "   - Rédaction du cahier des charges avec le manager",
+              "   - Rédaction d'une documentation technique pour les data engineers",
+              "   - Rédaction d'une documentation fonctionnelle pour la data governance",
+              "   - Restitution des connaissances lors de réunion pour expliquer les nouveaux processus"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Résultat",
+            "headingSize": "h2",
+            "text": [
+              "   - Nouveau pipeline implémentant les outils internes au groupe",
+              "   - Anonymisation en continue des données impliquées"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "images": [
+          {
+            "alt": "Photographie du siège social du Groupe SEB",
+            "url": "/works/showcase/groupe-seb-01.webp"
+          }
+        ],
+        "heading": "",
+        "disposition": "single"
+      }
+    ],
     "work_image_showcase": "/works/showcase/groupe-seb-01.webp",
     "work_label": "programming",
     "work_name": "Data Engineer - Groupe SEB",
