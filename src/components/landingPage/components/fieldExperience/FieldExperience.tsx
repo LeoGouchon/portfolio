@@ -5,15 +5,17 @@ import {
     GlobalWrapper, ImageCategoryStyled, MainTextWrapper, NameProfilWrapper, NameWrapper, SecondRowWrapper,
     ShowcaseCategoryWrapper,
     SmallCategoryWrapper, TextDescriptionWrapper,
-    TextWrapper, TitleStyled
+    TextWrapper, TitleStyled, TypographyClickStyled
 } from "./FieldExperience.style.tsx";
-import {Button, Typography} from "@mui/material";
+import {Typography} from "@mui/material";
 import {useState} from "react";
 import {ArrowDownward, ArrowUpward} from "@mui/icons-material";
 import {useScreenSizeContext} from "../../../../providers/ScreenSizeProvider.tsx";
+import {useNavigate} from "react-router-dom";
 
 export const FieldExperience = () => {
     const screenSize = useScreenSizeContext();
+    const navigate = useNavigate();
 
     const profiles = [{
         id: 1,
@@ -51,6 +53,7 @@ export const FieldExperience = () => {
                         <NameWrapper>
                             <Typography variant={"body1"}>Léo Gouchon</Typography>
                             <Typography variant={"body1"}>Lyon, France</Typography>
+                            <TypographyClickStyled variant={"body1"} color={"primary"} onClick={_ => navigate("/works")}>works</TypographyClickStyled>
                         </NameWrapper>}
                     <MainTextWrapper>
                         <TitleStyled variant={[3,4].includes(screenSize) ? "h2" : "h1"}>Découvrez mes 4 types d'expérience</TitleStyled>
@@ -85,7 +88,7 @@ export const FieldExperience = () => {
             </FirstRowWrapper>
             <SecondRowWrapper screensize={screenSize}>
                 <CTAWrapper screensize={screenSize}>
-                    <Button variant={"outlined"} color={"primary"} href={"/works"}>Works</Button>
+                    {/*<Button variant={"outlined"} color={"primary"} href={"/works"}>Works</Button>*/}
                 </CTAWrapper>
                 <TextDescriptionWrapper screensize={screenSize}>
                     <NameProfilWrapper>

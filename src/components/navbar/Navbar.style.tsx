@@ -8,7 +8,7 @@ export const GlobalWrapper = styled.div`
     
     position: sticky;
     top:0;
-    z-index: 100;
+    z-index: 2;
     
     background-color: ${({ theme }) => theme.palette.background.default};
 `;

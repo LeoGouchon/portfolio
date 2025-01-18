@@ -6,11 +6,8 @@ import {
     NavLinkStyled, NavWrapper, RightSideMenuWrapper,
     ToolBarStyled
 } from "./Navbar.style.tsx";
-import {useAuth} from "../../providers/AuthProvider.tsx";
 
 export const Navbar = () => {
-    const {user} = useAuth()
-
     return (
         <GlobalWrapper>
             <AppBarStyled>
@@ -22,12 +19,6 @@ export const Navbar = () => {
                             </NavLinkStyled>
                         </LeftSideMenuWrapper>
                         <MiddleSideMenuWrapper>
-                            {user?.role === "admin" &&
-                                <NavLinkStyled to="/create">
-                                    create
-                                </NavLinkStyled>
-                            }
-
                             <NavLinkStyled to="/works">
                                 Works
                             </NavLinkStyled>
@@ -38,18 +29,6 @@ export const Navbar = () => {
                             <NavLinkStyled to="/card">
                                 Contact
                             </NavLinkStyled>
-
-                            {/*{*/}
-                            {/*    user ?*/}
-                            {/*        <NavLinkStyled to="#"*/}
-                            {/*                       onClick={logout}*/}
-                            {/*        >*/}
-                            {/*            Log out*/}
-                            {/*        </NavLinkStyled> :*/}
-                            {/*        <NavLinkStyled to="/login">*/}
-                            {/*            Login*/}
-                            {/*        </NavLinkStyled>*/}
-                            {/*}*/}
                         </RightSideMenuWrapper>
                     </NavWrapper>
 

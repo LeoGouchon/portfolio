@@ -167,3 +167,7 @@ export const ArrowsWrapper = styled.div`
 export const TitleStyled = styled(Typography)`
 `;
 
+export const TypographyClickStyled = styled(Typography)`
+    cursor: pointer;
+    width: fit-content;
+`;
