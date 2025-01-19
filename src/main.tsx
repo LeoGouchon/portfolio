@@ -3,7 +3,6 @@ import {createRoot} from 'react-dom/client'
 import App from './App.tsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {GlobalWrapper} from "./global.style.tsx";
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import {createTheme, responsiveFontSizes, ThemeProvider} from "@mui/material";
 import {themeOptions} from "./theme.ts";
 import {Works} from "./components/Works/Works.tsx";
