@@ -41,24 +41,14 @@ const router = createBrowserRouter([
 
 const theme = responsiveFontSizes(createTheme(themeOptions))
 
-const queryClient = new QueryClient({
-    defaultOptions: {
-        queries: {
-            staleTime: 60 * 1000,
-        },
-    },
-});
-
 createRoot(document.getElementById('root')!).render(
-    <QueryClientProvider client={queryClient}>
-            <ScreenSizeProvider>
-                <ThemeProvider theme={theme}>
-                    <GlobalWrapper>
-                        <StrictMode>
-                            <RouterProvider router={router}/>
-                        </StrictMode>
-                    </GlobalWrapper>
-                </ThemeProvider>
-            </ScreenSizeProvider>
-    </QueryClientProvider>
+    <ScreenSizeProvider>
+        <ThemeProvider theme={theme}>
+            <GlobalWrapper>
+                <StrictMode>
+                    <RouterProvider router={router}/>
+                </StrictMode>
+            </GlobalWrapper>
+        </ThemeProvider>
+    </ScreenSizeProvider>
 )
