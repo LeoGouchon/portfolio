@@ -7,29 +7,23 @@ export const BackgroundWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000ef;
+    background-color: rgba(236, 241, 241, 0.94);
     backdrop-filter: blur(10px);
 `;
 
-export const SVGStyled = styled.svg`
+export const SVGStyled = styled.div`
     position: absolute;
     z-index: 10;
     display: flex;
 `;
 
-export const PatternStyled = styled.pattern`
+export const PatternStyled = styled.div`
     color: white;
 `;
 
-export const RectBackgroundStyled = styled.rect`
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-`;
-
-export const RectStyled = styled.rect`
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-    color: rebeccapurple;
+export const LogoImg = styled.img`
+    width: 300px;
+    height: auto;   
+    position: relative;
+    margin: auto;
 `;

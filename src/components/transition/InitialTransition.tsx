@@ -1,8 +1,7 @@
 import {motion} from "motion/react";
 import {
-    BackgroundWrapper,
+    BackgroundWrapper, LogoImg,
     PatternStyled,
-    RectBackgroundStyled, RectStyled,
     SVGStyled
 } from "./InitialTransition.style.tsx";
 import {useEffect} from "react";
@@ -11,7 +10,6 @@ export const InitialTransition = () => {
 
     const MotionBackgroundWrapper = motion(BackgroundWrapper)
     const MotionSVGStyled = motion(SVGStyled)
-    const MotionRectStyled = motion(RectStyled);
 
     const blackBox = {
         initial: {
@@ -22,7 +20,7 @@ export const InitialTransition = () => {
         animate: {
             height: 0,
             transition: {
-                when: "afterChildren",
+                delay: 1,
                 duration: 1.5,
                 ease: [0.87, 0, 0.13, 1],
             },
@@ -36,20 +34,8 @@ export const InitialTransition = () => {
         animate: {
             opacity: 0,
             transition: {
-                duration: 0.25,
-                when: "afterChildren",
-            },
-        },
-    };
-
-    const text = {
-        initial: {
-            y: 40,
-        },
-        animate: {
-            y: 80,
-            transition: {
-                duration: 1.5,
+                delay: 1,
+                duration: 1,
                 ease: [0.87, 0, 0.13, 1],
             },
         },
@@ -70,24 +56,11 @@ export const InitialTransition = () => {
             <MotionSVGStyled variants={textContainer}>
                 <PatternStyled
                     id="pattern"
-                    patternUnits={"userSpaceOnUse"}
-                    width={750}
-                    height={800}
                 >
-                    <RectBackgroundStyled/>
-                    <MotionRectStyled variants={text}/>
                 </PatternStyled>
-                <text
-                    textAnchor="middle"
-                    x="50%"
-                    y="50%"
-                    style={{
-                        fill: "url(#pattern)",
-                        fontSize: "50px"
-                }}
-                >
-                    LOGO DE MOI
-                </text>
+                <LogoImg
+                    src={"/logotypo.svg"}
+                />
             </MotionSVGStyled>
         </MotionBackgroundWrapper>
     )
