@@ -9,6 +9,7 @@ import {Works} from "./components/Works/Works.tsx";
 import {ScreenSizeProvider} from "./providers/ScreenSizeProvider.tsx";
 import {LandingPage} from "./components/landingPage/LandingPage.tsx";
 import {Work} from "./components/Work/Work.tsx";
+import {SpeedInsights} from "@vercel/speed-insights/react";
 
 const router = createBrowserRouter([
     {
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
     }
 ])
 
-const theme = responsiveFontSizes(createTheme(themeOptions))
+const theme = responsiveFontSizes(createTheme(themeOptions));
 
 createRoot(document.getElementById('root')!).render(
     <ScreenSizeProvider>
@@ -47,8 +48,9 @@ createRoot(document.getElementById('root')!).render(
             <GlobalWrapper>
                 <StrictMode>
                     <RouterProvider router={router}/>
+                    <SpeedInsights />
                 </StrictMode>
             </GlobalWrapper>
         </ThemeProvider>
     </ScreenSizeProvider>
-)
+);

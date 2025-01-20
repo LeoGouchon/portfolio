@@ -1,12 +1,15 @@
 import {Typography, TypographyProps} from "@mui/material";
-import {motion, useMotionValue, useTransform, animate} from "motion/react";
-import {useEffect} from "react";
+import {motion, useMotionValue, useTransform, animate, useInView} from "motion/react";
+import {useEffect, useRef} from "react";
 
 interface MotionTextProps extends TypographyProps {
     children: string;
 }
 
-export const MotionTypography = ({children, variant}:MotionTextProps) => {
+export const MotionTypography = ({children, variant}: MotionTextProps) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
+
     const getRandomCharacter = () => {
         return String.fromCharCode(33 + Math.floor(Math.random() * 94))
     }
@@ -37,15 +40,17 @@ export const MotionTypography = ({children, variant}:MotionTextProps) => {
     });
 
     useEffect(() => {
-        const controls = animate(count, children.length + 5, {
-            duration: children.length * 0.03,
-        })
-        return () => controls.stop()
-    }, [])
+        if (isInView) {
+            const controls = animate(count, children.length + 5, {
+                duration: children.length * 0.03,
+            })
+            return () => controls.stop()
+        }
+    }, [isInView])
 
-    const MotionTypography = motion(Typography);
+    const MotionTypography = motion.create(Typography);
 
     return (
-        <MotionTypography variant={variant}>{displayText}</MotionTypography>
+        <MotionTypography variant={variant} ref={ref}>{displayText}</MotionTypography>
     )
 }

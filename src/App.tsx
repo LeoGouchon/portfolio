@@ -10,7 +10,7 @@ export const App = () => {
 
     const location = useLocation();
 
-    const MotionContentWrapper = motion(ContentWrapper);
+    const MotionContentWrapper = motion.create(ContentWrapper);
 
     return (
         <AnimatePresence mode={"wait"}>

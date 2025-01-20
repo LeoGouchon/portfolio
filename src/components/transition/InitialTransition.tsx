@@ -8,8 +8,8 @@ import {useEffect} from "react";
 
 export const InitialTransition = () => {
 
-    const MotionBackgroundWrapper = motion(BackgroundWrapper)
-    const MotionSVGStyled = motion(SVGStyled)
+    const MotionBackgroundWrapper = motion.create(BackgroundWrapper)
+    const MotionSVGStyled = motion.create(SVGStyled)
 
     const blackBox = {
         initial: {

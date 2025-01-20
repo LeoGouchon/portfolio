@@ -12,6 +12,7 @@ import React, {ReactNode} from "react";
 import {ShowcaseWork} from "../showcase/ShowcaseWork.tsx";
 import {ScreenSizeInterface} from "../../../../global.style.tsx";
 import {dateToDisplay} from "../../../../utils/Date.ts";
+import {MotionTypography} from "../../../mui/motionTypography/MotionTypography.tsx";
 
 
 interface RowWorkProps extends ScreenSizeInterface {
@@ -44,7 +45,7 @@ export const RowWork = (props: RowWorkProps): ReactNode => {
                                         screensize={screensize}/>
                         </TableCellChipStyled>
                         <TableCellStyled>
-                            <Typography variant={"h2"}>{w.work_name}</Typography>
+                            <MotionTypography variant={"h2"}>{w.work_name}</MotionTypography>
                         </TableCellStyled>
                         <TableYearStyled>
                             <YearStyled variant={"h3"}>
