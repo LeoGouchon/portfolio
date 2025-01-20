@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import {Chip, css, TableCell, TableContainer, TableHead, TableRow, Typography} from "@mui/material";
 import {ScreenSizeInterface} from "../../global.style.tsx";
 import {getGapValue} from "../../utils/CssUtils.ts";
+import {MotionTypography} from "../mui/motionTypography/MotionTypography.tsx";
 
 export const SelectedTags = styled.div`
     display: flex;
@@ -17,7 +18,7 @@ export const GlobalWrapper = styled.div`
     gap: 20px;
 `;
 
-interface WorksListWrapperProps extends ScreenSizeInterface {}
+type WorksListWrapperProps = ScreenSizeInterface
 
 export const WorksListWrapper = styled.div<WorksListWrapperProps>`
     display: flex;
@@ -28,7 +29,7 @@ export const WorksListWrapper = styled.div<WorksListWrapperProps>`
     padding-right: ${props => props.screensize >= 4 ? '20px' : 0};
 `;
 
-interface TableAndFilterWrapperProps extends ScreenSizeInterface {};
+type TableAndFilterWrapperProps = ScreenSizeInterface;
 
 export const TableAndFilterWrapper = styled.div<TableAndFilterWrapperProps>`
     display: flex;
@@ -121,7 +122,7 @@ export const TableFirstRowStyled = styled(TableRow)`
     }
 `;
 
-interface SelectWrapperProps extends ScreenSizeInterface {};
+type SelectWrapperProps = ScreenSizeInterface;
 
 export const SelectWrapper = styled.div<SelectWrapperProps>`
     display: flex;
@@ -136,7 +137,7 @@ export const TitleAndShowcaseWrapper = styled.div`
     width: 33%;
 `;
 
-interface NameAndChipWrapperProps extends ScreenSizeInterface {};
+type NameAndChipWrapperProps = ScreenSizeInterface;
 
 export const NameAndChipWrapper = styled.div<NameAndChipWrapperProps>`
     display: flex;
@@ -183,6 +184,8 @@ export const YearStyled = styled(Typography)`
     writing-mode: vertical-rl;
     text-orientation: mixed;
 `;
+
+export const NameStyled = styled(MotionTypography)``;
 
 export const MobileTableCellStyled = styled(TableCellStyled)`
     display: flex;

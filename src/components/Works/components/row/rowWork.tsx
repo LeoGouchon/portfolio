@@ -1,6 +1,6 @@
 import {
     ChipStyled, ChipWrapper,
-    MobileTableCellStyled, NameAndChipWrapper,
+    MobileTableCellStyled, NameAndChipWrapper, NameStyled,
     TableCellChipStyled, TableCellShowCaseStyled,
     TableCellStyled, TableRowPrimaryStyled,
     TableRowStyled,
@@ -12,7 +12,7 @@ import React, {ReactNode} from "react";
 import {ShowcaseWork} from "../showcase/ShowcaseWork.tsx";
 import {ScreenSizeInterface} from "../../../../global.style.tsx";
 import {dateToDisplay} from "../../../../utils/Date.ts";
-import {MotionTypography} from "../../../mui/motionTypography/MotionTypography.tsx";
+
 
 
 interface RowWorkProps extends ScreenSizeInterface {
@@ -45,7 +45,7 @@ export const RowWork = (props: RowWorkProps): ReactNode => {
                                         screensize={screensize}/>
                         </TableCellChipStyled>
                         <TableCellStyled>
-                            <MotionTypography variant={"h2"}>{w.work_name}</MotionTypography>
+                            <NameStyled variant={"h2"}>{w.work_name}</NameStyled>
                         </TableCellStyled>
                         <TableYearStyled>
                             <YearStyled variant={"h3"}>
@@ -63,7 +63,7 @@ export const RowWork = (props: RowWorkProps): ReactNode => {
                                     screensize={screensize}
                                 />
                             </ChipWrapper>
-                            <Typography variant={"h2"}>{w.work_name}</Typography>
+                            <NameStyled variant={"h2"}>{w.work_name}</NameStyled>
                         </NameAndChipWrapper>
                         <YearStyled variant={"h3"}>{dateToDisplay(w.work_date_from, w.work_date_to)}</YearStyled>
                     </MobileTableCellStyled>
