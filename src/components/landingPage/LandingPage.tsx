@@ -4,6 +4,7 @@ import {AboutMe} from "./components/aboutMe/AboutMe.tsx";
 import {Divider} from "./components/divider/Divider.tsx";
 import {FieldExperience} from "./components/fieldExperience/FieldExperience.tsx";
 import {motion} from "motion/react";
+import {InitialTransition} from "../transition/InitialTransition.tsx";
 
 export const LandingPage = () => {
 
@@ -13,7 +14,7 @@ export const LandingPage = () => {
         <MotionGlobalWrapper
             exit={{opacity: 0}}
         >
-            {/*<InitialTransition/>*/}
+            <InitialTransition/>
             <AboutMe/>
             <Divider/>
             <FieldExperience/>
