@@ -6,7 +6,7 @@ import {
     TableRowStyled,
     TableYearStyled, YearStyled
 } from "../../Works.style.tsx";
-import {Collapse, Typography} from "@mui/material";
+import {Collapse} from "@mui/material";
 import {WorkType} from "../../Works.tsx";
 import React, {ReactNode} from "react";
 import {ShowcaseWork} from "../showcase/ShowcaseWork.tsx";
