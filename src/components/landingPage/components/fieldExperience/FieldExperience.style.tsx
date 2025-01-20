@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import {ScreenSizeInterface} from "../../../../global.style.tsx";
 import {getGapValue} from "../../../../utils/CssUtils.ts";
 import {css, Typography} from "@mui/material";
+import {MotionTypography} from "../../../mui/motionTypography/MotionTypography.tsx";
 
 interface GlobalWrapperProps extends ScreenSizeInterface {};
 
@@ -164,7 +165,7 @@ export const ArrowsWrapper = styled.div`
     justify-content: space-between;
 `;
 
-export const TitleStyled = styled(Typography)`
+export const TitleStyled = styled(MotionTypography)`
 `;
 
 export const TypographyClickStyled = styled(Typography)`

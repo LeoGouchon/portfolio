@@ -14,7 +14,7 @@ export const LandingPage = () => {
         <MotionGlobalWrapper
             exit={{opacity: 0}}
         >
-            <InitialTransition/>
+            {/*<InitialTransition/>*/}
             <AboutMe/>
             <Divider/>
             <FieldExperience/>
