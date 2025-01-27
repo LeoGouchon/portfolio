@@ -26,7 +26,7 @@ export const Navbar = () => {
                         </MiddleSideMenuWrapper>
                         <RightSideMenuWrapper>
 
-                            <NavLinkStyled to="/card">
+                            <NavLinkStyled to={""} onClick={() => window.location.href = 'mailto:contact@leogouchon.com'}>
                                 Contact
                             </NavLinkStyled>
                         </RightSideMenuWrapper>

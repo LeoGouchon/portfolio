@@ -40,10 +40,6 @@ export const MotionTypography = ({children, variant}: MotionTextProps) => {
     });
 
     useEffect(() => {
-        console.log("Element is in view: ", isInView)
-    }, [isInView])
-
-    useEffect(() => {
         if (isInView) {
             const controls = animate(count, children.length + 5, {
                 duration: children.length * 0.03,
