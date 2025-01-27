@@ -31,9 +31,9 @@ export const ShowcaseWork = ({highlightWork}: {highlightWork: WorkType}) => {
                         disabled={!highlightWork?.work_dedicated_page}
                         onClick={() => navigate(`/works/${highlightWork?.work_id}`)}
                     >
-                        Show more
+                        Voir plus
                     </Button>
-                    <Button variant={"outlined"} color={"inherit"}>Share</Button>
+                    <Button variant={"outlined"} color={"inherit"}>Partager</Button>
                 </CTAWrapper>
             </HeadersShowcaseWrapper>
             <ImageShowcase

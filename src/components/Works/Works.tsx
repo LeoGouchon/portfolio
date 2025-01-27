@@ -125,7 +125,7 @@ export const Works = () => {
                             </Select>
                         </SelectWrapper>
                     </FormControl>
-                    <Alert severity="info">Tous les projets n'ont pas encore été complétés. Si vous voulez en apprendre d'avantage, n'hésitez pas à me contacter.</Alert>
+                    <Alert severity="info">Tous les projets n'ont pas encore été complétés. Si vous voulez en apprendre davantage, n'hésitez pas à me contacter.</Alert>
                     <TableContainerStyled>
                         <Table size="small">
                             <TableHeadStyled>
