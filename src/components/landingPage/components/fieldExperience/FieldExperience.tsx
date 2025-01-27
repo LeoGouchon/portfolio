@@ -19,26 +19,26 @@ export const FieldExperience = () => {
 
     const profiles = [{
         id: 1,
-        name: "Photography",
-        description: "Découvert en 2023 lors des 6 heures de Spa-Francorchamps, la photographie est devenue une passion ponctuelle. Elle me permet d'exprimer et de sauvegarder les évènements (automobiles principalement) auquels j'assiste dans ma vie.",
+        name: "Photographie",
+        description: "Découverte en 2023 lors des 6 Heures de Spa-Francorchamps, la photographie est devenue une passion occasionnelle. Elle me permet d’exprimer ma créativité et d’immortaliser les événements auxquels j’assiste dans ma vie.",
         image: "/works/showcase/24h-spa-01.webp",
         imageAlt: "Photographie (par Léo Gouchon) des 24H Crowdstrike Spa-Francorchamps 2023"
     }, {
         id: 2,
         name: "Design",
-        description: "Découvrir Adobe Photoshop au collège a sans doute été un tournant dans ma vie. J'ai découvert et appris le graphisme en autodicacte et en m'amusant. Cela me permet maintenant d'élaborer des projets plus complexes.",
+        description: "Découvrir Adobe Photoshop au collège a sans doute marqué un tournant dans ma vie. J’ai appris le graphisme en autodidacte, tout en m’amusant. Aujourd’hui, cela me permet de réaliser des projets plus complexes.",
         image: "/works/showcase/dorianne-pin-booster-01.webp",
         imageAlt: "Cartes à collectionner de la pilote Dorianne Pin"
     }, {
         id: 3,
-        name: "Event",
-        description: "Participer a des évènements en tant qu'organisateur est toujours gratifiant en regardant le résultat final. Je peux apporter mon expertise en matière de graphisme tout en gérant des équipes de différentes tailles.",
+        name: "Evènement",
+        description: "Participer à des événements en tant qu’organisateur est toujours gratifiant, surtout lorsque je contemple le résultat final. Cela me permet d’apporter mon expertise en graphisme tout en gérant des équipes de tailles variées.",
         image: "/works/showcase/tedx-cpe-lyon-01.webp",
         imageAlt: "Photographie (par Léo Gouchon) du TEDx CPE Lyon 2023"
     }, {
         id: 4,
         name: "Tech",
-        description: "Mon choix professionel. Diplomé en 2024 de CPE Lyon en tant qu'ingénieur numérique spécialité Conception Logiciel et Big Data. Découvrir de nouvelles technologies et explorer le monde de la data ont toujours attisés ma curiosité.",
+        description: "Mon choix professionnel. Diplômé en 2024 de CPE Lyon en tant qu’ingénieur numérique, j’ai toujours été fasciné par la découverte de nouvelles technologies et l’exploration du monde de la data, qui attisent constamment ma curiosité.",
         image: "/works/showcase/pricing-pact-01.webp",
         imageAlt: "Photographie (par Jonagraphe) lors du stage chez Givemefive (anciennement PricingPact)"
     }];
