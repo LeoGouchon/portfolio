@@ -1,11 +1,11 @@
 import {
     AppBarStyled,
     GlobalWrapper,
-    LeftSideMenuWrapper,
-    MiddleSideMenuWrapper,
+    LeftSideMenuWrapper, LinkWrapperStyled,
     NavLinkStyled, NavWrapper, RightSideMenuWrapper,
     ToolBarStyled
 } from "./Navbar.style.tsx";
+import {TypographyClickStyled} from "../landingPage/components/fieldExperience/FieldExperience.style.tsx";
 
 export const Navbar = () => {
     return (
@@ -14,21 +14,24 @@ export const Navbar = () => {
                 <ToolBarStyled>
                     <NavWrapper>
                         <LeftSideMenuWrapper>
-                            <NavLinkStyled to="/">
-                                Home
-                            </NavLinkStyled>
+                            <LinkWrapperStyled>
+                                <NavLinkStyled to="/">
+                                    Accueil
+                                </NavLinkStyled>
+                            </LinkWrapperStyled>
                         </LeftSideMenuWrapper>
-                        <MiddleSideMenuWrapper>
-                            <NavLinkStyled to="/works">
-                                Works
-                            </NavLinkStyled>
-
-                        </MiddleSideMenuWrapper>
                         <RightSideMenuWrapper>
-
-                            <NavLinkStyled to={""} onClick={() => window.location.href = 'mailto:contact@leogouchon.com'}>
-                                Contact
-                            </NavLinkStyled>
+                            <LinkWrapperStyled>
+                                <NavLinkStyled to="/works">
+                                    Projets
+                                </NavLinkStyled>
+                            </LinkWrapperStyled>
+                            <LinkWrapperStyled>
+                                <TypographyClickStyled
+                                    onClick={() => window.location.href = 'mailto:contact@leogouchon.com'}>
+                                    Contactez-moi
+                                </TypographyClickStyled>
+                            </LinkWrapperStyled>
                         </RightSideMenuWrapper>
                     </NavWrapper>
 

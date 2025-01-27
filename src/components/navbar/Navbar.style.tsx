@@ -44,16 +44,20 @@ export const LeftSideMenuWrapper = styled.div`
     width: 100%;
 `;
 
-export const MiddleSideMenuWrapper = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-`;
-
 export const RightSideMenuWrapper = styled.div`
     width: 50%;
     display: flex;
     justify-content: end;
     gap: 20px;
+`;
+
+export const LinkWrapperStyled = styled.div`
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+    
+    :hover{
+        background-color: ${props => props.theme.palette.background.paper};
+    }
 `;

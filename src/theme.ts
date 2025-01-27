@@ -11,7 +11,7 @@ export const themeOptions: ThemeOptions = {
         },
         background: {
             default: '#ffffff',
-            paper: '#ffffff',
+            paper: '#e7e7e7',
         },
         programming: {
             main: alpha("#EB9C83", 0.7),
