@@ -41,11 +41,11 @@ export const NavWrapper = styled.nav`
 `;
 
 export const LeftSideMenuWrapper = styled.div`
-    width: 100%;
+    width: 33%;
 `;
 
 export const RightSideMenuWrapper = styled.div`
-    width: 50%;
+    width: 66%;
     display: flex;
     justify-content: end;
     gap: 20px;

@@ -46,7 +46,7 @@ export const MotionTypography = ({children, variant}: MotionTextProps) => {
             })
             return () => controls.stop()
         }
-    }, [isInView])
+    }, [children, children.length, count, isInView])
 
     const MotionTypography = motion.create(Typography);
 

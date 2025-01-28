@@ -148,7 +148,7 @@ export const NameAndChipWrapper = styled.div<NameAndChipWrapperProps>`
     gap: ${getGapValue(1)}
 `;
 
-interface ChipStyledProps extends ScreenSizeInterface {};
+type ChipStyledProps = ScreenSizeInterface
 
 export const ChipStyled = styled(Chip)<ChipStyledProps>`
     ${props => props.screensize === 1 && css`
