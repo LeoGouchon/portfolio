@@ -40,18 +40,23 @@ type PartWrapperProps = ScreenSizeInterface
 
 export const PartWrapper = styled.div<PartWrapperProps>`
     display: flex;
+    flex-direction: ${props => props.screensize === 1 ? "column" : "row"};
     width: ${props => props.screensize > 3 ? "66%" : "100%"};
     gap: ${props => getGapValue(props.screensize)};
 `;
 
-export const TextWrapper = styled.div`
+type TextWrapperProps = ScreenSizeInterface
+
+export const TextWrapper = styled.div<TextWrapperProps>`
     display: flex;
     flex-direction: column;
-    width: 66%;
+    width: ${props => props.screensize === 1 ? "100%" : "66%"};
 `;
 
-export const HeadingWrapper = styled.div`
-    width: 33%;
+type HeadingWrapperProps = ScreenSizeInterface
+
+export const HeadingWrapper = styled.div<HeadingWrapperProps>`
+    width: ${props => props.screensize === 1 ? "100%" : "33%"};
     > * {
         text-wrap: balance;
     }

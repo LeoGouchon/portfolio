@@ -18,10 +18,10 @@ export const TextSection: ({data}: { data: textSectionInterface }) => ReactNode 
         <TextSectionWrapper>
             {data.sections?.map((p: sectionInterface, index: number): ReactNode =>
                 <PartWrapper key={index} screensize={screenSize}>
-                    <HeadingWrapper>
+                    <HeadingWrapper screensize={screenSize}>
                         {p.heading && <Typography variant={p.headingSize ?? "h2"}>{p.heading}</Typography>}
                     </HeadingWrapper>
-                    <TextWrapper>
+                    <TextWrapper screensize={screenSize}>
                         {p.text.map((t: string) =>
                             <BodyStyled variant={"body1"}>{t}</BodyStyled>)}
                     </TextWrapper>
