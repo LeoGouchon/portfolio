@@ -1,7 +1,14 @@
 import styled from "@emotion/styled";
-import {Box} from "@mui/material";
+import {Box, css} from "@mui/material";
 import {breakpoints} from "./providers/ScreenSizeProvider.tsx"
 import {getGapValue} from "./utils/CssUtils.ts";
+
+export const GlobalStyles = css`
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+`;
 
 export interface ScreenSizeInterface {
     screensize: number;
@@ -20,7 +27,7 @@ export const GlobalWrapper = styled(Box)`
     background-color: ${({theme}) => theme.palette.background.default};
 `;
 
-interface ContentWrapperProps extends ScreenSizeInterface {}
+type ContentWrapperProps = ScreenSizeInterface
 
 export const ContentWrapper = styled(Box)<ContentWrapperProps>`
     width: 100%;

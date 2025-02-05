@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import {Chip, css, TableCell, TableContainer, TableHead, TableRow, Typography} from "@mui/material";
 import {ScreenSizeInterface} from "../../global.style.tsx";
 import {getGapValue} from "../../utils/CssUtils.ts";
-import {MotionTypography} from "../mui/motionTypography/MotionTypography.tsx";
 
 export const SelectedTags = styled.div`
     display: flex;
@@ -85,29 +84,6 @@ export const TableCellShowCaseStyled = styled(TableCellStyled)`
     padding-top: 0;
 `;
 
-export const TableCellChipStyled = styled(TableCellStyled)`
-    gap: 8px;
-`;
-
-export const TableYearStyled = styled(TableCellStyled)`
-    text-wrap: nowrap;
-    text-align: right;
-`;
-
-export const IconsWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 20px;
-    
-    > * {
-        min-width: 0;
-        padding: 0;
-    }
-`;
-
 export const TableContainerStyled = styled(TableContainer)`
   overflow-y: hidden;
 `;
@@ -181,11 +157,12 @@ export const ChipWrapper = styled.div`
 `;
 
 export const YearStyled = styled(Typography)`
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding-right: 40px;
 `;
 
-export const NameStyled = styled(MotionTypography)``;
+export const NameStyled = styled(Typography)``;
 
 export const MobileTableCellStyled = styled(TableCellStyled)`
     display: flex;

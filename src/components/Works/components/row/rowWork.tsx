@@ -1,10 +1,10 @@
 import {
     ChipStyled, ChipWrapper,
     MobileTableCellStyled, NameAndChipWrapper, NameStyled,
-    TableCellChipStyled, TableCellShowCaseStyled,
-    TableCellStyled, TableRowPrimaryStyled,
+    TableCellShowCaseStyled,
+    TableRowPrimaryStyled,
     TableRowStyled,
-    TableYearStyled, YearStyled
+    YearStyled
 } from "../../Works.style.tsx";
 import {Collapse} from "@mui/material";
 import {WorkType} from "../../Works.tsx";
@@ -35,37 +35,20 @@ export const RowWork = React.memo((props: RowWorkProps): ReactNode => {
                 <TableRowPrimaryStyled key={w.work_id} onClick={() => {
                     handleClick(w)
                 }}>
-                    {screensize > 1 ? <>
-                            <TableCellChipStyled>
-                                <ChipStyled label={w.work_label}
-                                            color={w.work_label as "photography" | "event" | "design" | "programming"}
-                                            size={screensize < 3 ? "small" : "medium"}
-                                            screensize={screensize}/>
-                            </TableCellChipStyled>
-                            <TableCellStyled>
-                                <NameStyled variant={"h2"}>{w.work_name}</NameStyled>
-                            </TableCellStyled>
-                            <TableYearStyled>
-                                <YearStyled variant={"h3"}>
-                                    {dateToDisplay(w.work_date_from, w.work_date_to)}
-                                </YearStyled>
-                            </TableYearStyled>
-                        </>
-                        : <MobileTableCellStyled>
-                            <NameAndChipWrapper screensize={screensize}>
-                                <ChipWrapper>
-                                    <ChipStyled
-                                        label={w.work_label}
-                                        color={w.work_label as "photography" | "event" | "design" | "programming"}
-                                        size={"small"}
-                                        screensize={screensize}
-                                    />
-                                </ChipWrapper>
-                                <NameStyled variant={"h2"}>{w.work_name}</NameStyled>
-                            </NameAndChipWrapper>
-                            <YearStyled variant={"h3"}>{dateToDisplay(w.work_date_from, w.work_date_to)}</YearStyled>
-                        </MobileTableCellStyled>
-                    }
+                    <MobileTableCellStyled>
+                        <NameAndChipWrapper screensize={screensize}>
+                            <ChipWrapper>
+                                <ChipStyled
+                                    label={w.work_label}
+                                    color={w.work_label as "photography" | "event" | "design" | "programming"}
+                                    size={"small"}
+                                    screensize={screensize}
+                                />
+                            </ChipWrapper>
+                            <NameStyled variant={"h2"}>{w.work_name}</NameStyled>
+                        </NameAndChipWrapper>
+                        <YearStyled variant={"h3"}>{dateToDisplay(w.work_date_from, w.work_date_to)}</YearStyled>
+                    </MobileTableCellStyled>
                 </TableRowPrimaryStyled>
                 <TableRowStyled>
                     <TableCellShowCaseStyled colSpan={5}>

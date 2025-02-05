@@ -1,4 +1,4 @@
-import {TableContainerStyled, TableFirstRowStyled, TableHeadStyled, TableYearStyled} from "../../Works.style.tsx";
+import {TableContainerStyled, TableFirstRowStyled, TableHeadStyled} from "../../Works.style.tsx";
 import {TableBody, TableCell, Table} from "@mui/material";
 import {RowWork} from "../row/rowWork.tsx";
 import {WorkType} from "../../Works.tsx";
@@ -21,16 +21,9 @@ export const WorksTable = React.memo(({filter}: WorksTableProps) => {
         <TableContainerStyled>
             <Table size="small">
                 <TableHeadStyled>
-                    {screenSize != 1 ?
-                        <TableFirstRowStyled>
-                            <TableCell width={"fit-content"}></TableCell>
-                            <TableCell width={"100%"}></TableCell>
-                            <TableYearStyled></TableYearStyled>
-                        </TableFirstRowStyled>
-                        : <TableFirstRowStyled>
-                            <TableCell width={"100%"}></TableCell>
-                        </TableFirstRowStyled>
-                    }
+                    <TableFirstRowStyled>
+                        <TableCell width={"100%"}></TableCell>
+                    </TableFirstRowStyled>
                 </TableHeadStyled>
                 <TableBody>
                     {
