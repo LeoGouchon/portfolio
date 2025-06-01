@@ -5,6 +5,7 @@ import {Divider} from "./components/divider/Divider.tsx";
 import {FieldExperience} from "./components/fieldExperience/FieldExperience.tsx";
 import {motion} from "motion/react";
 import {InitialTransition} from "../transition/InitialTransition.tsx";
+import {CheckProjects} from "./components/checkProjects/checkProjects.tsx";
 
 export const LandingPage = () => {
 
@@ -16,6 +17,8 @@ export const LandingPage = () => {
         >
             <InitialTransition/>
             <AboutMe/>
+            <Divider/>
+            <CheckProjects/>
             <Divider/>
             <FieldExperience/>
             <Divider/>

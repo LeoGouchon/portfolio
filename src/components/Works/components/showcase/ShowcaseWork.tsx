@@ -11,7 +11,7 @@ import {useNavigate} from "react-router-dom";
 import {WorkType} from "../../Works.tsx";
 import {useScreenSizeContext} from "../../../../providers/ScreenSizeProvider.tsx";
 
-export const ShowcaseWork = ({highlightWork}: {highlightWork: WorkType}) => {
+export const ShowcaseWork = ({highlightWork}: { highlightWork: WorkType }) => {
     const navigate = useNavigate();
 
     const screenSize = useScreenSizeContext();
@@ -36,9 +36,12 @@ export const ShowcaseWork = ({highlightWork}: {highlightWork: WorkType}) => {
                     <Button variant={"outlined"} color={"inherit"}>Partager</Button>
                 </CTAWrapper>
             </HeadersShowcaseWrapper>
-            <ImageShowcase
-                screensize={screenSize}
-                img={highlightWork?.work_image_showcase}/>
+            {
+                highlightWork?.work_image_showcase &&
+                <ImageShowcase
+                    screensize={screenSize}
+                    img={highlightWork?.work_image_showcase}/>
+            }
         </WorkShowcaseWrapper>
     )
 }
