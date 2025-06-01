@@ -23,7 +23,7 @@ export type WorkType = {
     work_id: number
     work_name: string;
     work_short_description: string;
-    work_image_showcase: string;
+    work_image_showcase: string | null;
     work_dedicated_page: any[] | null; // TODO
     work_label: string;
     work_date_from: string;
