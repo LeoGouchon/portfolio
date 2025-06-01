@@ -385,16 +385,20 @@
           {
             "url": "/works/westMotors/westMotors05.webp",
             "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
-          },{
+          },
+          {
             "url": "/works/westMotors/westMotors06.webp",
             "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
-          },{
+          },
+          {
             "url": "/works/westMotors/westMotors07.webp",
             "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
-          },{
+          },
+          {
             "url": "/works/westMotors/westMotors08.webp",
             "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
-          },{
+          },
+          {
             "url": "/works/westMotors/westMotors09.webp",
             "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
           }
@@ -633,5 +637,83 @@
     "work_name": "Data Engineer - Groupe SEB",
     "work_short_description": "Revoir le processus d'anonymisation de la donnée personnel au sein du datalake du Groupe SEB",
     "work_relative_path": null
+  },
+  {
+    "work_id": 16,
+    "work_date_from": "2025-04-25",
+    "work_date_to": "2025-04-25",
+    "work_dedicated_page": null,
+    "work_image_showcase": null,
+    "work_label": "programming",
+    "work_name": "Consultant - Cleeven",
+    "work_short_description": "Consultant IT pour l'entreprise Cleeven",
+    "work_relative_path": null
+  },
+  {
+    "work_id": 17,
+    "work_date_from": "2025-05-10",
+    "work_date_to": "2025-05-10",
+    "work_dedicated_page": [
+      {
+        "type": "text",
+        "sections": [
+          {
+            "heading": "Championnat de France",
+            "headingSize": "h2",
+            "text": [
+              "Étape du championnat de France des circuits se déroulant sur le circuit de Dijon-Prenois",
+              "Suivi de la première journée de course des différentes catégories présentes sur le week-end."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "disposition": "landscape",
+        "images": [
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-01.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-02.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-04.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-05.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-06.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-07.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-08.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-09.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          },
+          {
+            "url": "/works/ffsaDijonPrenois/ffsa-dijon-prenois-10.webp",
+            "alt": "Photo lors de l'exposition du concessionnaire West Motors à Lyon"
+          }
+        ]
+      }
+    ],
+    "work_image_showcase": "/works/showcase/ffsa-dijon-prenois.webp",
+    "work_label": "photography",
+    "work_name": "FFSA - Championnat circuit - Étape Dijon-Prenois",
+    "work_short_description": "Revoir le processus d'anonymisation de la donnée personnel au sein du datalake du Groupe SEB",
+    "work_relative_path": "works/ffsa-dijon-prenois/"
   }
 ]
